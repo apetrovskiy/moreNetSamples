@@ -1,0 +1,1 @@
+﻿https://docs.microsoft.com/ru-ru/dotnet/csharp/tutorials/console-webapiclient

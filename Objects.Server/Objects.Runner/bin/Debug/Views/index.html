@@ -8,12 +8,12 @@
 <body>
     <table>
         <tr><td>Name</td><td>Vaccinated</td></tr>
+        @Each
         <tr>
-            @Each
             <td>@!Current.Name</td>
             <td>@!Current.IsVaccinated</td>
-            @EndEach
         </tr>
+        @EndEach
     </table>
 </body>
 </html>

@@ -15,9 +15,9 @@ namespace Objects.Runner
     {
         static void Main(string[] args)
         {
-            Data.Dogs = new Dog[] {new Dog("Sharik"), new Dog("Toozik"), new Dog("Jack Russell")}.ToList();
+            Data.Dogs = new[] {new Dog("Sharik"), new Dog("Toozik"), new Dog("Jack Russell")}.ToList();
             Data.Dogs[1].IsVaccinated = true;
-            Data.Owners = new Owner[] {new Owner("John", "Smith", new Dog[]{ Data.Dogs[0]}.ToList()), new Owner("Bill", "Gates", new[]{Data.Dogs[1], Data.Dogs[2]}.ToList())}.ToList();
+            Data.Owners = new[] {new Owner("John", "Smith", new[]{ Data.Dogs[0]}.ToList()), new Owner("Bill", "Gates", new[]{Data.Dogs[1], Data.Dogs[2]}.ToList())}.ToList();
 
             using (var host = new NancyHost(new Uri("http://localhost:1234")))
             {

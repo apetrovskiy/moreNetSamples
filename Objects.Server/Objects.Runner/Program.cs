@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Objects.Runner
+﻿namespace Objects.Runner
 {
-    using Model;
+	using System;
+	using System.Linq;
+	using Model;
     using Model.Dogs;
     using Model.Humans;
     using Nancy.Hosting.Self;

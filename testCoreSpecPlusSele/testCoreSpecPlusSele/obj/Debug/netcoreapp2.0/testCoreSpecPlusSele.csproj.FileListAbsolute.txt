@@ -1,0 +1,11 @@
+D:\Projects\experimental\testCoreSpecPlusSele\testCoreSpecPlusSele\bin\Debug\netcoreapp2.0\testCoreSpecPlusSele.deps.json
+D:\Projects\experimental\testCoreSpecPlusSele\testCoreSpecPlusSele\bin\Debug\netcoreapp2.0\testCoreSpecPlusSele.runtimeconfig.json
+D:\Projects\experimental\testCoreSpecPlusSele\testCoreSpecPlusSele\bin\Debug\netcoreapp2.0\testCoreSpecPlusSele.runtimeconfig.dev.json
+D:\Projects\experimental\testCoreSpecPlusSele\testCoreSpecPlusSele\bin\Debug\netcoreapp2.0\testCoreSpecPlusSele.dll
+D:\Projects\experimental\testCoreSpecPlusSele\testCoreSpecPlusSele\obj\Debug\netcoreapp2.0\testCoreSpecPlusSele.csprojResolveAssemblyReference.cache
+D:\Projects\experimental\testCoreSpecPlusSele\testCoreSpecPlusSele\obj\Debug\netcoreapp2.0\testCoreSpecPlusSele.csproj.CoreCompileInputs.cache
+D:\Projects\experimental\testCoreSpecPlusSele\testCoreSpecPlusSele\obj\Debug\netcoreapp2.0\testCoreSpecPlusSele.AssemblyInfoInputs.cache
+D:\Projects\experimental\testCoreSpecPlusSele\testCoreSpecPlusSele\obj\Debug\netcoreapp2.0\testCoreSpecPlusSele.AssemblyInfo.cs
+D:\Projects\experimental\testCoreSpecPlusSele\testCoreSpecPlusSele\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Projects\experimental\testCoreSpecPlusSele\testCoreSpecPlusSele\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Projects\experimental\testCoreSpecPlusSele\testCoreSpecPlusSele\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll

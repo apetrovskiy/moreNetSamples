@@ -1,0 +1,65 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    ".NETPortable,Version=v4.6,Profile=Profile44": {
+      "Selenium.Support/3.8.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing"
+        ]
+      },
+      "Selenium.WebDriver/3.8.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "Selenium.Support/3.8.0": {
+      "sha512": "dUjtHRqHt/JLcNodk/IvydquP15m534BMT4Zcq2BM9XYI4XCKX9iJR2qFWAHdv0IYUicZq+w5EsMzceyAe3FUw==",
+      "type": "package",
+      "path": "Selenium.Support/3.8.0",
+      "files": [
+        "Selenium.Support.3.8.0.nupkg.sha512",
+        "Selenium.Support.nuspec",
+        "lib/net35/WebDriver.Support.dll",
+        "lib/net35/WebDriver.Support.xml",
+        "lib/net40/WebDriver.Support.dll",
+        "lib/net40/WebDriver.Support.xml",
+        "lib/net45/WebDriver.Support.dll",
+        "lib/net45/WebDriver.Support.xml",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml"
+      ]
+    },
+    "Selenium.WebDriver/3.8.0": {
+      "sha512": "7CUnhcDpyUwY0fs/clW/avjJ8HSsDD3ae4JccC7Lz9oundxkWXLsH9jM0FfGkozj1rNnfYVYObXncQAQxXa4Qw==",
+      "type": "package",
+      "path": "Selenium.WebDriver/3.8.0",
+      "files": [
+        "Selenium.WebDriver.3.8.0.nupkg.sha512",
+        "Selenium.WebDriver.nuspec",
+        "lib/net35/WebDriver.dll",
+        "lib/net35/WebDriver.xml",
+        "lib/net40/WebDriver.dll",
+        "lib/net40/WebDriver.xml",
+        "lib/net45/WebDriver.dll",
+        "lib/net45/WebDriver.xml",
+        "lib/netstandard2.0/WebDriver.dll",
+        "lib/netstandard2.0/WebDriver.xml"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "Selenium.Support >= 3.8.0",
+      "Selenium.WebDriver >= 3.8.0"
+    ],
+    ".NETPortable,Version=v4.6,Profile=Profile44": []
+  },
+  "tools": {},
+  "projectFileToolGroups": {}
+}

@@ -1,0 +1,5 @@
+D:\Projects\experimental\experimentalFramework\Experimental.Core.Portable\bin\Debug\Experimental.Core.Portable.dll
+D:\Projects\experimental\experimentalFramework\Experimental.Core.Portable\bin\Debug\Experimental.Core.Portable.pdb
+D:\Projects\experimental\experimentalFramework\Experimental.Core.Portable\obj\Debug\Experimental.Core.Portable.csprojResolveAssemblyReference.cache
+D:\Projects\experimental\experimentalFramework\Experimental.Core.Portable\obj\Debug\Experimental.Core.Portable.dll
+D:\Projects\experimental\experimentalFramework\Experimental.Core.Portable\obj\Debug\Experimental.Core.Portable.pdb

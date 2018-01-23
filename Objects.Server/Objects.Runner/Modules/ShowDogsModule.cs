@@ -10,7 +10,7 @@
         {
             Get["dogs/"] = _ => { return View["index.html", Data.Dogs]; };
             Get["dogs1/"] = _ => { return Data.Dogs; };
-            //Get["dogs/{"]
+            Get["dogs/{name}"] = parameters => { return Data.Dogs.First(dog => dog.Name.ToUpper() == parameters.name.ToString().ToUpper()); };
         }
     }
 }

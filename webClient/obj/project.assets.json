@@ -1829,7 +1829,7 @@
       ]
     },
     "System.Private.DataContractSerialization/4.3.0": {
-      "sha512": "yDaJ2x3mMmjdZEDB4IbezSnCsnjQ4BxinKhRAaP6kEgL6Bb6jANWphs5SzyD8imqeC/3FxgsuXT6ykkiH1uUmA==",
+      "sha512": "AFQxCajObEWwCgovmO8Xg8CryXe4UKtfzCpXZ4YbFGZPK0FIuN6WLTkAP3Q12HMU5jFWfS3HW9MCb/pEqcPPBg==",
       "type": "package",
       "path": "system.private.datacontractserialization/4.3.0",
       "files": [
@@ -3222,7 +3222,7 @@
       ]
     },
     "System.Xml.XmlSerializer/4.3.0": {
-      "sha512": "MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
+      "sha512": "rsmHzfXfd3vKlkaGjfUpHK1RdXLZYHlOeTD5gbMlayCOvs8C9jIVS47kStPZvhHmILd1zIRl0bknnAl5b+USnA==",
       "type": "package",
       "path": "system.xml.xmlserializer/4.3.0",
       "files": [
@@ -3299,25 +3299,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Users\\Alexander_Petrovskiy\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "d:\\Projects\\experimental\\webClient\\webClient.csproj",
+      "projectUniqueName": "D:\\Projects\\experimental\\webClient\\webClient.csproj",
       "projectName": "webClient",
-      "projectPath": "d:\\Projects\\experimental\\webClient\\webClient.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "d:\\Projects\\experimental\\webClient\\obj\\",
+      "projectPath": "D:\\Projects\\experimental\\webClient\\webClient.csproj",
+      "packagesPath": "C:\\Users\\Alexander_Petrovskiy\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\experimental\\webClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alexander_Petrovskiy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -3326,6 +3329,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Alexander_Petrovskiy\\.dotnet\\NuGetFallbackFolder": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

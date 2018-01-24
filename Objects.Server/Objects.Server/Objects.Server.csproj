@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modules\AddDogsModule.cs" />
+    <Compile Include="Modules\RemoveDogsModule.cs" />
     <Compile Include="Modules\ShowDogsModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

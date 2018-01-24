@@ -8,7 +8,7 @@
 	{
 		public AddDogsModule() : base("/")
 		{
-			Post["dogs/{name}"] = parameters => AddNewDog(parameters.name);
+			Post["dogs/"] = _ => AddNewDog(this.Request.Query["name"].Value);
 		}
 
 		private HttpStatusCode AddNewDog(string name)

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Animals.Runner
 {
     using Model;
+    using Nancy.Hosting.Self;
 
     class Program
     {
@@ -14,8 +15,12 @@ namespace Animals.Runner
         {
             Data.Cats = new List<Cat>(new []{new Cat("Murka"), new Cat("Vaska"), new Cat("Barsik"),  }.ToList());
 
-            Console.WriteLine("End");
-            Console.ReadKey();
+            using (var host = new NancyHost(new Uri("http://localhost:1235")))
+            {
+                host.Start();
+                Console.WriteLine("Running on http://localhost:1235");
+                Console.ReadLine();
+            };
         }
     }
 }

@@ -28,11 +28,11 @@
 		    // var msg = await stringTask;
 			// Console.Write(msg);
 
-			var serializer = new DataContractJsonSerializer(typeof(List<repo>));
+			var serializer = new DataContractJsonSerializer(typeof(List<Repository>));
 		    var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
-		    var repositories = serializer.ReadObject(await streamTask) as List<repo>;
+		    var repositories = serializer.ReadObject(await streamTask) as List<Repository>;
 
-			repositories.ForEach(repo => Console.WriteLine(repo.name));
+			repositories.ForEach(repo => Console.WriteLine(repo.Name));
 	    }
     }
 }

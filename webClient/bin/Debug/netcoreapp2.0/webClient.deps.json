@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v2.0": {
       "webClient/1.0.0": {
         "dependencies": {
-          "System.Runtime.Serialization.Json": "4.3.0"
+          "System.Runtime.Serialization.Json": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0"
         },
         "runtime": {
           "webClient.dll": {}
@@ -414,7 +415,7 @@
     "System.Private.DataContractSerialization/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AFQxCajObEWwCgovmO8Xg8CryXe4UKtfzCpXZ4YbFGZPK0FIuN6WLTkAP3Q12HMU5jFWfS3HW9MCb/pEqcPPBg==",
+      "sha512": "sha512-yDaJ2x3mMmjdZEDB4IbezSnCsnjQ4BxinKhRAaP6kEgL6Bb6jANWphs5SzyD8imqeC/3FxgsuXT6ykkiH1uUmA==",
       "path": "system.private.datacontractserialization/4.3.0",
       "hashPath": "system.private.datacontractserialization.4.3.0.nupkg.sha512"
     },
@@ -582,7 +583,7 @@
     "System.Xml.XmlSerializer/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rsmHzfXfd3vKlkaGjfUpHK1RdXLZYHlOeTD5gbMlayCOvs8C9jIVS47kStPZvhHmILd1zIRl0bknnAl5b+USnA==",
+      "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     }

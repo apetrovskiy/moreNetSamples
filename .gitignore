@@ -173,5 +173,8 @@ obj/
 # packages.config
 debug/
 release/
+/obj/
+obj/Debug/
+
 
 packages/

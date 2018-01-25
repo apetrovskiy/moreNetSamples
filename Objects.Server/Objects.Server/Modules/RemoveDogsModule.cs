@@ -7,7 +7,7 @@
 	{
 		public RemoveDogsModule() : base("/")
 		{
-			Delete["dogs/"] = _ => DeleteDogByName(this.Request.Query["name"].Value);
+			Delete["dogs"] = _ => DeleteDogByName(this.Request.Query["name"].Value);
 		}
 
 		private HttpStatusCode DeleteDogByName(string name)

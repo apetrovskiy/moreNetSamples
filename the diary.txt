@@ -6,7 +6,7 @@ the Delete and Get methods with parameters on the web service side
 a simple web service with Get and Post method handlers (NancyFx 1.4.4)
 
 2018-01-24
-?
+Restlet client
 
 2018-01-22
 intro, setting goals

@@ -1,6 +1,0 @@
-D:\Projects\experimental\experimentalFramework\experimentalFramework\bin\Debug\experimentalFramework.exe.config
-D:\Projects\experimental\experimentalFramework\experimentalFramework\bin\Debug\experimentalFramework.exe
-D:\Projects\experimental\experimentalFramework\experimentalFramework\bin\Debug\experimentalFramework.pdb
-D:\Projects\experimental\experimentalFramework\experimentalFramework\obj\Debug\experimentalFramework.csprojResolveAssemblyReference.cache
-D:\Projects\experimental\experimentalFramework\experimentalFramework\obj\Debug\experimentalFramework.exe
-D:\Projects\experimental\experimentalFramework\experimentalFramework\obj\Debug\experimentalFramework.pdb

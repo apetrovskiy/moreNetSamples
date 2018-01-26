@@ -1,5 +1,0 @@
-D:\Projects\experimental\Objects.Server\Objects.Model\bin\Debug\Objects.Model.dll
-D:\Projects\experimental\Objects.Server\Objects.Model\bin\Debug\Objects.Model.pdb
-D:\Projects\experimental\Objects.Server\Objects.Model\obj\Debug\Objects.Model.csproj.CoreCompileInputs.cache
-D:\Projects\experimental\Objects.Server\Objects.Model\obj\Debug\Objects.Model.dll
-D:\Projects\experimental\Objects.Server\Objects.Model\obj\Debug\Objects.Model.pdb

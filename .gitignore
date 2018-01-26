@@ -166,15 +166,13 @@ pip-log.txt
 ## project-specific
 ######################
 
-obj/
 *.log
 *.dll
 *.exe
 # packages.config
-debug/
-release/
-/obj/
-obj/Debug/
-
+[Oo]bj
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
 
 packages/

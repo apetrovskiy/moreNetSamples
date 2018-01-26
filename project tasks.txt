@@ -1,0 +1,13 @@
+1 selenium
+2 web services
+3 patterns
+4 EF (self)
+5 clean code
+6 frameworks building
+7 logging
+8 reporting
+
+
+
+Framework
+1 

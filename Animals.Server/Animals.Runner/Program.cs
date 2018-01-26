@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Animals.Runner
+﻿namespace Animals.Runner
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
     using Model;
     using Nancy.Hosting.Self;
 

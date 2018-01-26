@@ -16,7 +16,7 @@
 	        Console.ReadKey();
         }
 
-	    private static async Task ProcessRepositories()
+	    private static async Task<List<Repository>> ProcessRepositories()
 	    {
 		    var client = new HttpClient();
 			client.DefaultRequestHeaders.Accept.Clear();
@@ -33,6 +33,7 @@
 		    var repositories = serializer.ReadObject(await streamTask) as List<Repository>;
 
 			repositories.ForEach(repo => Console.WriteLine(repo.Name));
+	        return repositories;
 	    }
     }
 }

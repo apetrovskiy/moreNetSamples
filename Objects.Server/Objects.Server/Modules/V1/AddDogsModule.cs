@@ -1,4 +1,4 @@
-﻿namespace Objects.Server.Modules
+﻿namespace Objects.Server.Modules.V1
 {
 	using Model;
 	using Model.Dogs;
@@ -6,9 +6,9 @@
 
 	public class AddDogsModule : NancyModule
 	{
-		public AddDogsModule() : base("/")
+		public AddDogsModule() : base(Constants.Version01)
 		{
-			Post["dogs"] = _ => AddNewDog(this.Request.Query["name"].Value);
+			Post[Constants.Dogs] = _ => AddNewDog(this.Request.Query["name"].Value);
 		}
 
 		private HttpStatusCode AddNewDog(string name)

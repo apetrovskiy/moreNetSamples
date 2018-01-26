@@ -1,13 +1,13 @@
-﻿namespace Objects.Server.Modules
+﻿namespace Objects.Server.Modules.V1
 {
 	using Model;
 	using Nancy;
 
 	public class RemoveDogsModule : NancyModule
 	{
-		public RemoveDogsModule() : base("/")
+		public RemoveDogsModule() : base(Constants.Version01)
 		{
-			Delete["dogs"] = _ => DeleteDogByName(this.Request.Query["name"].Value);
+			Delete[Constants.Dogs] = _ => DeleteDogByName(this.Request.Query["name"].Value);
 		}
 
 		private HttpStatusCode DeleteDogByName(string name)

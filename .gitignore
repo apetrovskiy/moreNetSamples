@@ -175,5 +175,6 @@ pip-log.txt
 [Dd]ebug*/
 [Rr]elease*/
 v15
+# https://stackoverflow.com/questions/4308610/how-to-ignore-certain-files-in-git
 
 packages/

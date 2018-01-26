@@ -14,6 +14,7 @@
         public Dog(string name)
         {
             this.Name = name;
+	        this.Id = ++Data.DogsCounter;
         }
     }
 }

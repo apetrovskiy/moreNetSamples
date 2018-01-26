@@ -5,6 +5,7 @@
 
     public class Owner
     {
+		public int Id { get; set; }
         public string FirstName { get; set; }
         public string Surname { get; set; }
         public List<Dog> Dogs { get; set; }
@@ -14,6 +15,7 @@
             this.FirstName = firstName;
             this.Surname = lastName;
             this.Dogs = null == dogs ? new List<Dog>() : dogs;
+	        this.Id = ++Data.OwnersCounter;
         }
     }
 }

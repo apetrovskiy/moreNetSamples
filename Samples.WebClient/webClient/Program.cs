@@ -13,7 +13,7 @@
         {
             var repositories = ProcessRepositories().Result;
 
-            repositories.ForEach(repo => Console.WriteLine($"Name={repo.Name}, description={repo.Description}, home url={repo.Homepage}, Github home url={repo.GitHubHomeUrl}, watchers={repo.Watchers}"));
+            repositories.ForEach(repo => Console.WriteLine($"Name={repo.Name}, description={repo.Description}, home url={repo.Homepage}, Github home url={repo.GitHubHomeUrl}, watchers={repo.Watchers}, lastPush={repo.LastPush}"));
             Console.ReadKey();
         }
 

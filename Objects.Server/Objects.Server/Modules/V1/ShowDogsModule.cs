@@ -1,4 +1,4 @@
-﻿namespace Objects.Server.Modules
+﻿namespace Objects.Server.Modules.V1
 {
 	using System.Linq;
 	using Model;
@@ -7,11 +7,11 @@
 
 	public class ShowDogsModule : NancyModule
     {
-        public ShowDogsModule() : base("/")
+        public ShowDogsModule() : base(Constants.Version01)
         {
             Get["dogs1"] = _ => Data.Dogs;
-            Get["dogs/{name}"] = parameters => { return Data.Dogs.First(dog => dog.Name.ToUpper() == parameters.name.ToString().ToUpper()); };
-	        Get["dogs"] = parameters =>
+            Get[Constants.Dogs + "/{name}"] = parameters => { return Data.Dogs.First(dog => dog.Name.ToUpper() == parameters.name.ToString().ToUpper()); };
+	        Get[Constants.Dogs] = parameters =>
 	        {
 		        return string.IsNullOrEmpty(this.Request.Query["name"].Value) ? View["index.html", Data.Dogs] : GetDogByName(this.Request.Query["name"].Value);
 	        };

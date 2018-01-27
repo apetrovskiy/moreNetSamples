@@ -1,8 +1,0 @@
-D:\Projects\experimental\Objects.Server\Objects.Server\bin\Debug\Views\index.html
-D:\Projects\experimental\Objects.Server\Objects.Server\bin\Debug\Objects.Server.dll
-D:\Projects\experimental\Objects.Server\Objects.Server\bin\Debug\Objects.Server.pdb
-D:\Projects\experimental\Objects.Server\Objects.Server\bin\Debug\Nancy.dll
-D:\Projects\experimental\Objects.Server\Objects.Server\bin\Debug\Nancy.xml
-D:\Projects\experimental\Objects.Server\Objects.Server\obj\Debug\Objects.Server.csproj.CoreCompileInputs.cache
-D:\Projects\experimental\Objects.Server\Objects.Server\obj\Debug\Objects.Server.dll
-D:\Projects\experimental\Objects.Server\Objects.Server\obj\Debug\Objects.Server.pdb

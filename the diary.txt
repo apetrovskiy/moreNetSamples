@@ -1,6 +1,7 @@
 
 2018-01-26
 the Delete and Get methods with parameters on the web service side
+demo of acceptance tests via RestSharp (1 test on post/get)
 
 2018-01-25
 a simple web service with Get and Post method handlers (NancyFx 1.4.4)

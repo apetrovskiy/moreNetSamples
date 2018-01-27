@@ -11,9 +11,10 @@
     {
         static void Main(string[] args)
         {
-	        ProcessRepositories().Wait();
+            var repositories = ProcessRepositories().Result;
 
-	        Console.ReadKey();
+            repositories.ForEach(repo => Console.WriteLine($"Name={repo.Name}, description={repo.Description}, home url={repo.Homepage}, Github home url={repo.GitHubHomeUrl}, watchers={repo.Watchers}"));
+            Console.ReadKey();
         }
 
 	    private static async Task<List<Repository>> ProcessRepositories()
@@ -32,7 +33,6 @@
 		    var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
 		    var repositories = serializer.ReadObject(await streamTask) as List<Repository>;
 
-			repositories.ForEach(repo => Console.WriteLine(repo.Name));
 	        return repositories;
 	    }
     }

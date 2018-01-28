@@ -1,4 +1,6 @@
 
+our VisualStudio.com project
+https://apetrovskiy.visualstudio.com/_git/DotNetMoreSamples
 
 .NET Core samples
 web client
@@ -10,6 +12,12 @@ https://github.com/NancyFx/Nancy/wiki/Documentation
 
 RestSharp documentation
 https://github.com/restsharp/RestSharp/wiki
+
+postman
+можно установить как приложение
+https://www.getpostman.com/apps
+или как плагин к хрому
+доку тут, если надо: https://www.getpostman.com/docs/postman/launching_postman/installation_and_updates
 
 Dapper
 http://dapper-tutorial.net/

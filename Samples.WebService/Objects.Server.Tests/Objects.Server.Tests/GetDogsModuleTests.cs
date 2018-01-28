@@ -13,7 +13,7 @@ namespace Objects.Server.Tests
 
 	    public GetDogsModuleTests()
 	    {
-		    client = new RestClient("http://localhost:1234/dogs");
+		    client = new RestClient("http://localhost:1234/v1/dogs");
 	    }
 
 		[TestMethod]

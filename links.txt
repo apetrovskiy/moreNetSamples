@@ -1,1 +1,7 @@
 
+
+.NET Core samples
+web client
+﻿https://docs.microsoft.com/ru-ru/dotnet/csharp/tutorials/console-webapiclient
+ ﻿https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/console-webapiclient
+  

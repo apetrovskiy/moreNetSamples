@@ -1,5 +1,6 @@
 ﻿namespace TodoNancyTests
 {
+    using CsQuery.ExtensionMethods;
     using Nancy;
     using Nancy.Testing;
     using TodoNancy;
@@ -63,6 +64,34 @@
 
             Assert.Equal(1, actualBody.Length);
             AssertAreSame(aTodo, actualBody[0]);
+        }
+
+        [Fact]
+        public void ShouldBeAbleToEditTodoWithPut()
+        {
+            var actual = sut.Post("/todos/", with => with.JsonBody(aTodo))
+                .Then
+                .Put("/todos/1", with => with.JsonBody(anEditedTodo))
+                .Then
+                .Get("/todos/");
+
+            var actualBody = actual.Body.DeserializeJson<Todo[]>();
+
+            Assert.Equal(1, actualBody.Length);
+            AssertAreSame(anEditedTodo, actualBody[0]);
+        }
+
+        [Fact]
+        public void ShouldBeAbleToDeleteTodoWithDelete()
+        {
+            var actual = sut.Post("/todos/", with => with.Body(aTodo.ToJSON()))
+                .Then
+                .Delete("/todos/1")
+                .Then
+                .Get("/todos/");
+
+            Assert.Equal(HttpStatusCode.OK, actual.StatusCode);
+            Assert.Empty(actual.Body.DeserializeJson<Todo[]>());
         }
 
         private void AssertAreSame(Todo expected, Todo actual)

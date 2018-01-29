@@ -1,8 +1,24 @@
+[
+to 2018-02-01
+1) acceptance tests with authentication
+2) acceptance test with cookies
+]
+
+[
+to 2018-01-31
+1) acceptance tests with objects (json, xml, content negotiation)
+2) unit tests with objects
+3) usage of a data store
+4) tests with other frameworks
+]
+
 to 2018-01-30
 1) дока apigee до 17-й стр. включительно
 2) не позволять добавлять одноимённого кота
 3) написать acceptance test на добавление одноимённого кота
-4) написать unit test на добавленик одноимённого кота
+4) написать unit test на добавление одноимённого кота
+5) пройти пошаговое создание рест-клиента (.NET Core)
+https://docs.microsoft.com/ru-ru/dotnet/csharp/tutorials/console-webapiclient
 
 to 2018-01-29
 1) дока apigee до 17-й стр. включительно

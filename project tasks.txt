@@ -14,4 +14,7 @@ Framework
 1 automatical control recognition
 2 automatical service end point recognition
 3 generation of test code
-4 hosting of the framework service in the cloud?
+4 embedded logging
+5 reporting (its own or compatible with third-party reporting engines)
+6 samples for usage
+7 hosting of the framework service in the cloud?

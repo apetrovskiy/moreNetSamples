@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Animals.Server.UnitTests
 {
-    using Nancy;
+	using System.Threading;
+	using Model;
+	using Modules;
+	using Nancy;
     using Nancy.Testing;
     using NUnit.Framework;
 
@@ -17,7 +20,8 @@ namespace Animals.Server.UnitTests
         [SetUp]
         public void SetUp()
         {
-            sut = new Browser(new DefaultNancyBootstrapper());
+            sut = new Browser(with => with.Module<CatsModule>());
+			Data.Cats = new List<Cat>();
         }
 
         [Test]
@@ -29,20 +33,14 @@ namespace Animals.Server.UnitTests
 
         private void ThenWeGetThatCat()
         {
-            var actual = sut.Get("v1/cats?name=Tiger");
+            var actual = sut.Get("/v1/cats", with => with.FormValue("name", "Tiger"));
             Assert.AreEqual(HttpStatusCode.OK, actual.StatusCode);
         }
 
         private void GivenWeCreateCat()
         {
-            // var actual = sut.Post("v1/cats?name=Tiger");
-            // var actual = sut.Post("cats?name=Tiger");
-            // var actual = sut.Post("http://localhost:1235/v1/cats?name=Tiger");
-            var actual = sut.Post("/v1/cats?name=Tiger");
-            // var actual = sut.Post("/cats?name=Tiger");
-            // var actual = sut.Post("/?name=Tiger");
-            // var actual = sut.Post("?name=Tiger");
-            Assert.AreEqual(HttpStatusCode.Created, actual.StatusCode);
+	        var actual = sut.Post("/v1/cats", with => with.FormValue("name", "Tiger"));
+			Assert.AreEqual(HttpStatusCode.Created, actual.StatusCode);
         }
     }
 }

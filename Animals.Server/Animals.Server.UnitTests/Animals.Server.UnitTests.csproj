@@ -61,6 +61,16 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Animals.Model\Animals.Model.csproj">
+      <Project>{126906C4-C3A2-4155-8450-E6D5B79728EB}</Project>
+      <Name>Animals.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Animals.Server\Animals.Server.csproj">
+      <Project>{C68AA819-C65F-4E9E-A76B-3A05836724A5}</Project>
+      <Name>Animals.Server</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

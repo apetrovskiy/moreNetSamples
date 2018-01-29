@@ -36,7 +36,12 @@ namespace Animals.Server.UnitTests
         private void GivenWeCreateCat()
         {
             // var actual = sut.Post("v1/cats?name=Tiger");
-            var actual = sut.Post("cats?name=Tiger");
+            // var actual = sut.Post("cats?name=Tiger");
+            // var actual = sut.Post("http://localhost:1235/v1/cats?name=Tiger");
+            var actual = sut.Post("/v1/cats?name=Tiger");
+            // var actual = sut.Post("/cats?name=Tiger");
+            // var actual = sut.Post("/?name=Tiger");
+            // var actual = sut.Post("?name=Tiger");
             Assert.AreEqual(HttpStatusCode.Created, actual.StatusCode);
         }
     }

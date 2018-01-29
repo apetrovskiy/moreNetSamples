@@ -9,6 +9,7 @@
 9 Docker
 10 AWS, Azure hosting
 11 web services - SOAP
+12 message queues
 
 Framework
 1 automatical control recognition

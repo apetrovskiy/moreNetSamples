@@ -23,4 +23,4 @@ Framework
 Soft skills
 1 interview questions
 2 instant code analysis
-3 tasks ordering
+3 tasks prioritisation

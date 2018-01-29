@@ -1,5 +1,5 @@
 1 web UI - Selenium
-2 web services - RestSharp, HTTPClient on client side, NancyFx, ASP.NET MVC Core on erver side
+2 web services - RestSharp, HTTPClient on client side, NancyFx, ASP.NET MVC Core on server side
 3 patterns
 4 EF (self), Dapper
 5 clean code, S.O.L.I.D.

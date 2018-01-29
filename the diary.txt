@@ -1,4 +1,8 @@
 
+2018-01-29
+acceptance tests with RestSharp (post/get) step-by-step
+unit tests with Nancy.Testing (post/get) step-by-step
+
 2018-01-26
 the Delete and Get methods with parameters on the web service side
 demo of acceptance tests via RestSharp (1 test on post/get)

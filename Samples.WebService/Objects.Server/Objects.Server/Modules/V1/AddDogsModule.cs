@@ -1,5 +1,6 @@
 ﻿namespace Objects.Server.Modules.V1
 {
+	using System.Linq;
 	using Model;
 	using Model.Dogs;
 	using Nancy;
@@ -13,6 +14,7 @@
 
 		private HttpStatusCode AddNewDog(string name)
 		{
+			if (Data.Dogs.Any() && Data.Dogs.Select(dog1 => dog1.Name.ToUpper()).Contains(name.ToUpper())) return HttpStatusCode.NotAcceptable;
 			var dog = new Dog(name);
 			Data.Dogs.Add(dog);
 			return HttpStatusCode.Created;

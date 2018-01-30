@@ -39,7 +39,7 @@ namespace Animals.Server.UnitTests
 
         private void GivenWeCreateCat()
         {
-	        var actual = sut.Post("/v1/cats", with => with.FormValue("name", "Tiger"));
+	        var actual = sut.Post("/v1/cats", with => with.Query("name", "Tiger"));
 			Assert.AreEqual(HttpStatusCode.Created, actual.StatusCode);
         }
     }

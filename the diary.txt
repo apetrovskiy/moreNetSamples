@@ -30,7 +30,7 @@ post, put of objects (json, xml, content negotiation)
 acceptance tests with objects (RestSharp, HTTPClient)
 unit tests with objects (Nancy.Testing)
 data store for objects (Entity or Dapper)
-other frameworks for accessing web services
+other frameworks for accessing web services, including SoapUI
 -----------------------------------------------------------------------------------------
 Single Responsibility Principle (S from SOLID)
 NullObject

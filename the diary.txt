@@ -19,23 +19,25 @@ Factory
 1) authentication
 2) cookies
 3) specflow
+post, put of objects (json, xml, content negotiation)
+acceptance tests with objects (RestSharp, HTTPClient)
+unit tests with objects (Nancy.Testing)
+data store for objects (Entity or Dapper)
 -----------------------------------------------------------------------------------------
 Open Close Principle (O from SOLID)
 Decorator
 -----------------------------------------------------------------------------------------]
 
-[-----------------------------------------------------------------------------------------
+
 2018-01-30
-post, put of objects (json, xml, content negotiation)
-acceptance tests with objects (RestSharp, HTTPClient)
-unit tests with objects (Nancy.Testing)
-data store for objects (Entity or Dapper)
-other frameworks for accessing web services, including SoapUI
+1) homework: не позволять добавлять одноимённого кота
+2) homework: написать acceptance test на добавление одноимённого кота
+3) homework: написать unit test на добавление одноимённого кота
+4) other frameworks for accessing web services, including SoapUI
 -----------------------------------------------------------------------------------------
 Single Responsibility Principle (S from SOLID)
 NullObject
 Command
------------------------------------------------------------------------------------------]
 
 2018-01-29
 acceptance tests with RestSharp (post/get) step-by-step

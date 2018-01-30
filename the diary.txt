@@ -38,6 +38,7 @@ Decorator
 Single Responsibility Principle (S from SOLID)
 NullObject
 Command
+-----------------------------------------------------------------------------------------
 
 2018-01-29
 acceptance tests with RestSharp (post/get) step-by-step

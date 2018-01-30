@@ -19,6 +19,9 @@ https://www.getpostman.com/apps
 или как плагин к хрому
 доку тут, если надо: https://www.getpostman.com/docs/postman/launching_postman/installation_and_updates
 
+SoapUI
+https://www.soapui.org/rest-testing/getting-started.html
+
 Dapper
 http://dapper-tutorial.net/
 https://github.com/StackExchange/dapper-dot-net/blob/master/Dapper.Tests

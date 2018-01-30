@@ -8,7 +8,7 @@ namespace Animals.Server.UnitTests
 {
 	using System.Threading;
 	using Model;
-	using Modules;
+	using Modules.V1;
 	using Nancy;
     using Nancy.Testing;
     using NUnit.Framework;
@@ -16,6 +16,8 @@ namespace Animals.Server.UnitTests
     public class V1Tests
     {
         private Browser sut;
+
+        private BrowserResponse actual;
 
         [SetUp]
         public void SetUp()
@@ -25,22 +27,37 @@ namespace Animals.Server.UnitTests
         }
 
         [Test]
+        public void ShouldNotAllowCreatingCatWithTheSameName()
+        {
+            this.GivenWeCreateCat();
+            Assert.AreEqual(HttpStatusCode.Created, actual.StatusCode);
+            this.GivenWeCreateCat();
+            Assert.AreEqual(HttpStatusCode.NotAcceptable, actual.StatusCode);
+        }
+
+        [Test]
+        
         public void ShouldReturnCatOnGetAfterPost()
         {
             this.GivenWeCreateCat();
+            Assert.AreEqual(HttpStatusCode.Created, actual.StatusCode);
             this.ThenWeGetThatCat();
+
         }
 
         private void ThenWeGetThatCat()
         {
-            var actual = sut.Get("/v1/cats", with => with.FormValue("name", "Tiger"));
+            actual = sut.Get("/v1/cats", with =>
+            {
+                with.Query("name", "Tiger");
+                //with.jso
+            });
             Assert.AreEqual(HttpStatusCode.OK, actual.StatusCode);
         }
 
         private void GivenWeCreateCat()
         {
-	        var actual = sut.Post("/v1/cats", with => with.Query("name", "Tiger"));
-			Assert.AreEqual(HttpStatusCode.Created, actual.StatusCode);
-        }
+	        actual = sut.Post("/v1/cats", with => with.Query("name", "Tiger"));
+		}
     }
 }

@@ -21,10 +21,21 @@ namespace Animals.Server.Tests
             this.client = new RestClient("http://localhost:1235/v1/cats");
         }
 
+
+        [Test]
+        public void ShouldNotAllowCreatingCatWithTheSameName()
+        {
+            this.GivenWeCreateCat();
+            Assert.AreEqual(HttpStatusCode.Created, this.response.StatusCode);
+            this.GivenWeCreateCat();
+            Assert.AreEqual(HttpStatusCode.NotAcceptable, this.response.StatusCode);
+        }
+
         [Test]
         public void ShouldReturnCatOnGetAfterPost()
         {
             this.GivenWeCreateCat();
+            Assert.AreEqual(HttpStatusCode.Created, this.response.StatusCode);
             this.ThenWeGetThatCat();
         }
 
@@ -41,7 +52,6 @@ namespace Animals.Server.Tests
             this.request = new RestRequest(Method.POST);
             this.request.AddParameter("name", "Tiger", ParameterType.QueryString);
             this.response = this.client.Execute(this.request);
-            Assert.AreEqual(HttpStatusCode.Created, this.response.StatusCode);
         }
 
         [TearDown]

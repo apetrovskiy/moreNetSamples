@@ -10,5 +10,12 @@
         {
             Name = name;
         }
+
+        /*
+        public Cat()
+        {
+
+        }
+        */
     }
 }

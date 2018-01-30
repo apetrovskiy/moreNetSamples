@@ -9,18 +9,24 @@
 	class Program
 	{
 		static void Main(string[] args)
-		{
-			var reader = new DataReader();
-			var resultCollection = new List<TradeItem>();
-			Console.WriteLine(System.Environment.CurrentDirectory);
-			
-			resultCollection.AddRange(reader.LoadDataFromJsonFile(Path.Combine(Environment.CurrentDirectory, @"Resources\data001.json")));
-			resultCollection.AddRange(reader.ProcessXmlWithTrades(Path.Combine(Environment.CurrentDirectory, "Resources"), "data002.xml"));
-			resultCollection.AddRange(reader.LoadTradesFromCommaSeparatedFile(Path.Combine(Environment.CurrentDirectory, @"Resources\data003.csv")));
-			resultCollection.AddRange(reader.LoadTradesFromTsv(Path.Combine(Environment.CurrentDirectory, @"Resources\data004.tsv")));
+        {
+            var reader = new DataReader();
+            var resultCollection = new List<TradeItem>();
+            Console.WriteLine(System.Environment.CurrentDirectory);
 
-			Console.WriteLine(resultCollection.Count);
-			Console.ReadKey();
-		}
-	}
+            resultCollection.AddRange(reader.LoadTradesFromJson(CombinePath("data001.json")));
+            resultCollection.AddRange(reader.LoadTradesFromXml(CombinePath("data002.xml")));
+            resultCollection.AddRange(reader.LoadTradesFromCsv(CombinePath("data003.csv")));
+            resultCollection.AddRange(reader.LoadTradesFromTsv(CombinePath("data004.tsv")));
+
+            Console.WriteLine(resultCollection.Count);
+            resultCollection.ForEach(item => Console.WriteLine(item.Name));
+            Console.ReadKey();
+        }
+
+        private static string CombinePath(string fileName)
+        {
+            return Path.Combine(Environment.CurrentDirectory, @"Resources", fileName);
+        }
+    }
 }

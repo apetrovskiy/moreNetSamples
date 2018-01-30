@@ -1,14 +1,15 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SingleResponsibilityPrinciple.Runner")]
+[assembly: AssemblyTitle("SingleResponsibilityPrinciple")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("EPAM Systems")]
-[assembly: AssemblyProduct("SingleResponsibilityPrinciple.Runner")]
+[assembly: AssemblyProduct("SingleResponsibilityPrinciple")]
 [assembly: AssemblyCopyright("Copyright © EPAM Systems 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("de267bb9-9d3a-49e2-82c7-67ac0a460c1d")]
+[assembly: Guid("0a6ce99a-352f-4a3b-a00a-4ee70afddebe")]
 
 // Version information for an assembly consists of the following four values:
 //

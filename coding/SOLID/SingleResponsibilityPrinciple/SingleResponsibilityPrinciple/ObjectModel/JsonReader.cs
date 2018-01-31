@@ -7,10 +7,15 @@
 
     public class JsonReader: DataFileReader
     {
-        public override IEnumerable<TradeItem> LoadFromFile(string fullFilePath)
+        public JsonReader(string fullFilePath)
         {
-            CheckInputFile(fullFilePath);
-            var stringData = File.ReadAllText(fullFilePath);
+            FullFilePath = fullFilePath;
+            CheckInputFile(FullFilePath);
+        }
+
+        public override IEnumerable<TradeItem> LoadFromFile()
+        {
+            var stringData = File.ReadAllText(FullFilePath);
             var result = JsonConvert.DeserializeObject<IEnumerable<TradeItem>>(stringData);
 
             return result;

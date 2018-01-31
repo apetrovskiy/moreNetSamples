@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ObjectModel\CsvReader.cs" />
-    <Compile Include="ObjectModel\DataReader.cs" />
+    <Compile Include="ObjectModel\DataLoader.cs" />
     <Compile Include="ObjectModel\DataFileReader.cs" />
     <Compile Include="ObjectModel\JsonReader.cs" />
     <Compile Include="ObjectModel\TsvReader.cs" />

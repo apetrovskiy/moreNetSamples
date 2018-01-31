@@ -8,10 +8,15 @@
 
     public class XmlReader: DataFileReader
     {
-        public override IEnumerable<TradeItem> LoadFromFile(string fullFilePath)
+        public XmlReader(string fullFilePath)
+        {
+            FullFilePath = fullFilePath;
+            CheckInputFile(FullFilePath);
+        }
+
+        public override IEnumerable<TradeItem> LoadFromFile()
     {
-        CheckInputFile(fullFilePath);
-        var xdoc = XDocument.Load(fullFilePath);
+        var xdoc = XDocument.Load(FullFilePath);
         var root = xdoc.Root;
         var result = root.Descendants("item").Select(item => new TradeItem
         {

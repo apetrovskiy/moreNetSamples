@@ -7,13 +7,18 @@
 
     public class CsvReader : DataFileReader
     {
-        public override IEnumerable<TradeItem> LoadFromFile(string fullFilePath)
+        public CsvReader(string fullFilePath)
         {
-            CheckInputFile(fullFilePath);
+            FullFilePath = fullFilePath;
+            CheckInputFile(FullFilePath);
+        }
+
+        public override IEnumerable<TradeItem> LoadFromFile()
+        {
             var result = new List<TradeItem>();
             var lineCount = 0;
 
-            using (var reader = new StreamReader(fullFilePath))
+            using (var reader = new StreamReader(FullFilePath))
             {
                 while (!reader.EndOfStream)
                 {

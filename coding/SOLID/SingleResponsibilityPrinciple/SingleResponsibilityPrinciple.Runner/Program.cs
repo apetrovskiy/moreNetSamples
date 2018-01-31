@@ -10,7 +10,7 @@
 	{
 		static void Main(string[] args)
         {
-            var reader = new DataReader();
+            var reader = new DataLoader();
             var resultCollection = new List<TradeItem>();
             Console.WriteLine(System.Environment.CurrentDirectory);
 

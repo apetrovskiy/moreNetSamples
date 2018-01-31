@@ -7,12 +7,17 @@
 
     public class TsvReader: DataFileReader
     {
-        public override IEnumerable<TradeItem> LoadFromFile(string fullFilePath)
+        public TsvReader(string fullFilePath)
+        {
+            FullFilePath = fullFilePath;
+            CheckInputFile(FullFilePath);
+        }
+
+        public override IEnumerable<TradeItem> LoadFromFile()
     {
-        CheckInputFile(fullFilePath);
         var result = new List<TradeItem>();
 
-        using (var reader = new StreamReader(fullFilePath))
+        using (var reader = new StreamReader(FullFilePath))
         {
             reader.ReadLine();
             while (!reader.EndOfStream)

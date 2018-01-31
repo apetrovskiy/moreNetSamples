@@ -11,11 +11,9 @@
             Name = name;
         }
 
-        /*
         public Cat()
         {
 
         }
-        */
     }
 }

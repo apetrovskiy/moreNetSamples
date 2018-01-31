@@ -6,13 +6,13 @@
 
     public abstract class DataFileReader
     {
-        public abstract IEnumerable<TradeItem> LoadFromFile(string fullFilePath);
-
-        protected void CheckInputFile(string filePath)
+       protected void CheckInputFile(string filePath)
         {
             if (!File.Exists(filePath))
                 throw new FileNotFoundException("Cannot find file " + filePath);
         }
-        
+
+        public string FullFilePath { get; set; }
+        public abstract IEnumerable<TradeItem> LoadFromFile();
     }
 }

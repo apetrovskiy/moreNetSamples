@@ -47,10 +47,9 @@ namespace Animals.Server.UnitTests
 
         private void ThenWeGetThatCat()
         {
-            actual = sut.Get("/v1/cats", with =>
+            actual = sut.Get("/v1/cats.xml", with =>
             {
                 with.Query("name", "Tiger");
-                //with.jso
             });
             Assert.AreEqual(HttpStatusCode.OK, actual.StatusCode);
         }

@@ -24,18 +24,24 @@ Factory
 -----------------------------------------------------------------------------------------
 Open Close Principle (O from SOLID)
 Decorator
+Command
 -----------------------------------------------------------------------------------------]
 
 [-----------------------------------------------------------------------------------------
 2018-01-31
+1) homework: tests with other frameworks - тесты на post, delete в SoapUI
+
 1) sending form data
 2) post, put of objects (json, xml, content negotiation)
 3) acceptance tests with objects (RestSharp, HTTPClient)
 4) unit tests with objects (Nancy.Testing)
 5) data store for objects (Entity or Dapper)
+
 -----------------------------------------------------------------------------------------
+1) homework: refactoring to split up responsibilities
+(передача пути файла в конструктор)
+
 NullObject
-Command
 -----------------------------------------------------------------------------------------]
 
 2018-01-30

@@ -18,7 +18,9 @@ Factory
 
 [-----------------------------------------------------------------------------------------
 2018-02-01
-1) sending form data
+1) authentication
+2) cookies
+3) specflow
 -----------------------------------------------------------------------------------------
 Open Close Principle (O from SOLID)
 Decorator
@@ -26,13 +28,11 @@ Decorator
 
 [-----------------------------------------------------------------------------------------
 2018-01-31
-1) authentication
-2) cookies
-3) specflow
-post, put of objects (json, xml, content negotiation)
-acceptance tests with objects (RestSharp, HTTPClient)
-unit tests with objects (Nancy.Testing)
-data store for objects (Entity or Dapper)
+1) sending form data
+2) post, put of objects (json, xml, content negotiation)
+3) acceptance tests with objects (RestSharp, HTTPClient)
+4) unit tests with objects (Nancy.Testing)
+5) data store for objects (Entity or Dapper)
 -----------------------------------------------------------------------------------------
 NullObject
 Command

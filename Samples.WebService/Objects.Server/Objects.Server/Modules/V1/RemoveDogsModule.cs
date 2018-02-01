@@ -7,7 +7,7 @@
 	{
 		public RemoveDogsModule() : base(Constants.Version01)
 		{
-			Delete[Constants.Dogs] = _ => DeleteDogByName(this.Request.Query["name"].Value);
+			Delete(Constants.Dogs, _ => DeleteDogByName(this.Request.Query["name"].Value));
 		}
 
 		private HttpStatusCode DeleteDogByName(string name)

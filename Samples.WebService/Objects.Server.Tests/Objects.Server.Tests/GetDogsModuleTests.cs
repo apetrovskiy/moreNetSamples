@@ -24,7 +24,23 @@ namespace Objects.Server.Tests
 	        ThenIcanGetDogByName(name);
         }
 
-	    private void WhenIcreateDogWithName(string name)
+		[TestMethod]
+		public void ShouldNotAllowPostingOfDogsWithTheSameName()
+		{
+			var name = "Rex";
+			WhenIcreateDogWithName(name);
+			ThenIgetNotAcceptableOnSubsequentPosting(name);
+		}
+
+		private void ThenIgetNotAcceptableOnSubsequentPosting(string name)
+		{
+			request = new RestRequest(Method.POST);
+			request.AddParameter("name", name, ParameterType.QueryString);
+			response = client.Execute(request);
+			Assert.AreEqual(HttpStatusCode.NotAcceptable, response.StatusCode);
+		}
+
+		private void WhenIcreateDogWithName(string name)
 	    {
 		    request = new RestRequest(Method.POST);
 		    request.AddParameter("name", name, ParameterType.QueryString);

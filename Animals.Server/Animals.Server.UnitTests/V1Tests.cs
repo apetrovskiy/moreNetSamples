@@ -2,7 +2,7 @@
 {
 
 	using Model;
-	using Modules;
+	using Modules.V1;
 	using Nancy;
     using Nancy.Testing;
     using NUnit.Framework;
@@ -12,6 +12,8 @@
     {
         private Browser sut;
 
+        private BrowserResponse actual;
+
         [SetUp]
         public void SetUp()
         {
@@ -20,22 +22,36 @@
         }
 
         [Test]
+        public void ShouldNotAllowCreatingCatWithTheSameName()
+        {
+            this.GivenWeCreateCat();
+            Assert.AreEqual(HttpStatusCode.Created, actual.StatusCode);
+            this.GivenWeCreateCat();
+            Assert.AreEqual(HttpStatusCode.NotAcceptable, actual.StatusCode);
+        }
+
+        [Test]
+        
         public void ShouldReturnCatOnGetAfterPost()
         {
             this.GivenWeCreateCat();
+            Assert.AreEqual(HttpStatusCode.Created, actual.StatusCode);
             this.ThenWeGetThatCat();
+
         }
 
         private void ThenWeGetThatCat()
         {
-            var actual = sut.Get("/v1/cats", with => with.FormValue("name", "Tiger"));
+            actual = sut.Get("/v1/cats.xml", with =>
+            {
+                with.Query("name", "Tiger");
+            });
             Assert.AreEqual(HttpStatusCode.OK, actual.StatusCode);
         }
 
         private void GivenWeCreateCat()
         {
-	        var actual = sut.Post("/v1/cats", with => with.FormValue("name", "Tiger"));
-			Assert.AreEqual(HttpStatusCode.Created, actual.StatusCode);
-        }
+	        actual = sut.Post("/v1/cats", with => with.Query("name", "Tiger"));
+		}
     }
 }

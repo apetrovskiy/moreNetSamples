@@ -24,3 +24,6 @@ Soft skills
 1 interview questions
 2 instant code analysis
 3 tasks prioritisation
+
+Smaller projects
+1 instagram liker of followers

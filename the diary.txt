@@ -1,41 +1,57 @@
 [-----------------------------------------------------------------------------------------
-2018-02-02
+2018-02-05
 1) xml and json schemata
 -----------------------------------------------------------------------------------------
 Interface Segregation Principle (I from SOLID)
 Facade
------------------------------------------------------------------------------------------]
-
-[-----------------------------------------------------------------------------------------
-2018-02-01
-1) sending form data
------------------------------------------------------------------------------------------
 Liskov Substitution Principle (O from SOLID)
 Factory
 -----------------------------------------------------------------------------------------]
 
 [-----------------------------------------------------------------------------------------
-2018-01-31
+2018-02-02
 1) authentication
 2) cookies
 3) specflow
+
+1) sending form data
+2) post, put of objects (json, xml, content negotiation)
+3) acceptance tests with objects (RestSharp, HTTPClient)
+4) unit tests with objects (Nancy.Testing)
+5) data store for objects (Entity or Dapper)
 -----------------------------------------------------------------------------------------
 Open Close Principle (O from SOLID)
 Decorator
 -----------------------------------------------------------------------------------------]
 
 [-----------------------------------------------------------------------------------------
+2018-02-01
+1) prep: sending form data
+2) prop: post, put of objects (json, xml, content negotiation)
+3) prep: acceptance tests with objects (RestSharp, HTTPClient)
+4) prep: unit tests with objects (Nancy.Testing)
+5) prep: data store for objects (Entity or Dapper)
+-----------------------------------------------------------------------------------------
+Command
+NullObject
+-----------------------------------------------------------------------------------------]
+
+[-----------------------------------------------------------------------------------------
+2018-01-31
+1) homework: tests with other frameworks - тесты на post, delete в SoapUI
+-----------------------------------------------------------------------------------------
+1) homework: refactoring to split up responsibilities
+(передача пути файла в конструктор)
+-----------------------------------------------------------------------------------------]
+
 2018-01-30
-post, put of objects (json, xml, content negotiation)
-acceptance tests with objects (RestSharp, HTTPClient)
-unit tests with objects (Nancy.Testing)
-data store for objects (Entity or Dapper)
-other frameworks for accessing web services, including SoapUI
+1) homework: не позволять добавлять одноимённого кота
+2) homework: написать acceptance test на добавление одноимённого кота
+3) homework: написать unit test на добавление одноимённого кота
+4) other frameworks for accessing web services, including SoapUI
 -----------------------------------------------------------------------------------------
 Single Responsibility Principle (S from SOLID)
-NullObject
-Command
------------------------------------------------------------------------------------------]
+-----------------------------------------------------------------------------------------
 
 2018-01-29
 acceptance tests with RestSharp (post/get) step-by-step

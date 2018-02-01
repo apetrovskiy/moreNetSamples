@@ -1,7 +1,6 @@
-﻿namespace Animals.Server.Modules
+﻿namespace Animals.Server.Modules.V1
 {
     using System.Linq;
-
     using Model;
     using Nancy;
 
@@ -34,6 +33,7 @@
 
         private HttpStatusCode AddNewCat(string name)
         {
+            if (Data.Cats.Select(cat1 => cat1.Name.ToUpper()).Contains(name.ToUpper())) return HttpStatusCode.NotAcceptable;
             var cat = new Cat(name);
             Data.Cats.Add(cat);
             return HttpStatusCode.Created;

@@ -1,0 +1,17 @@
+
+-----------------------------------------------------------------------------------------
+to 2018-02-02
+1) an Instagram sample
+2) sending form data
+3) post, put of objects (json, xml, content negotiation)
+4) acceptance tests with objects (RestSharp, HTTPClient)
+5) unit tests with objects (Nancy.Testing)
+6) data store for objects (Entity or Dapper)
+7) пройти пошаговое создание рест-клиента (.NET Core)
+https://docs.microsoft.com/ru-ru/dotnet/csharp/tutorials/console-webapiclient
+8) дока apigee до 17-й стр. включительно
+-----------------------------------------------------------------------------------------
+Command
+NullObject
+whatever is the first in the Design Patterns book
+-----------------------------------------------------------------------------------------

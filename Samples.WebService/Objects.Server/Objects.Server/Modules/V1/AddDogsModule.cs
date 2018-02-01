@@ -9,7 +9,7 @@
 	{
 		public AddDogsModule() : base(Constants.Version01)
 		{
-			Post[Constants.Dogs] = _ => AddNewDog(this.Request.Query["name"].Value);
+			Post(Constants.Dogs, _ => AddNewDog(this.Request.Query["name"].Value));
 		}
 
 		private HttpStatusCode AddNewDog(string name)

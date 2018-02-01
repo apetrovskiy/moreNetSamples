@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Animals.Server.UnitTests
+﻿namespace Animals.Server.UnitTests
 {
-	using System.Threading;
+
 	using Model;
 	using Modules;
 	using Nancy;
     using Nancy.Testing;
     using NUnit.Framework;
+    using System.Collections.Generic;
 
     public class V1Tests
     {

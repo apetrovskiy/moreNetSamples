@@ -10,10 +10,14 @@
         public int Age { get; set; }
         public bool IsVaccinated { get; set; }
 
-        public Dog(string name)
+        public Dog(string name) : this()
         {
             this.Name = name;
-	        this.Id = ++Data.DogsCounter;
+        }
+
+        public Dog()
+        {
+            this.Id = ++Data.DogsCounter;
         }
     }
 }

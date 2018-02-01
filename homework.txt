@@ -12,17 +12,18 @@ to 2018-02-05
 1) acceptance tests with authentication
 2) acceptance test with cookies
 3) tests with SpecFlow
+
+1) sending form data in acceptance tests
+2) sending form data in unit tests
+3) acceptance tests with objects (json, xml, content negotiation)
+4) unit tests with objects
+5) usage of a data store
 -----------------------------------------------------------------------------------------
 1) refactoring to OCR
 -----------------------------------------------------------------------------------------]
 
 [-----------------------------------------------------------------------------------------
 to 2018-02-02
-1) sending form data in acceptance tests
-2) sending form data in unit tests
-3) acceptance tests with objects (json, xml, content negotiation)
-4) unit tests with objects
-5) usage of a data store
 -----------------------------------------------------------------------------------------
 1) more refactoring to split up responsibilities
 -----------------------------------------------------------------------------------------]

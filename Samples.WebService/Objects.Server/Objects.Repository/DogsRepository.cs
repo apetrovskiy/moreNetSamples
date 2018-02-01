@@ -15,7 +15,7 @@
 	    public IEnumerable<Dog> GetAllDogs()
 	    {
 		    
-			CreateDatabase();
+			// CreateDatabase();
 
 			// TODO:
 			return new List<Dog>();

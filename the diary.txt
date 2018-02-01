@@ -13,6 +13,12 @@ Factory
 1) authentication
 2) cookies
 3) specflow
+
+1) sending form data
+2) post, put of objects (json, xml, content negotiation)
+3) acceptance tests with objects (RestSharp, HTTPClient)
+4) unit tests with objects (Nancy.Testing)
+5) data store for objects (Entity or Dapper)
 -----------------------------------------------------------------------------------------
 Open Close Principle (O from SOLID)
 Decorator
@@ -20,11 +26,11 @@ Decorator
 
 [-----------------------------------------------------------------------------------------
 2018-02-01
-1) sending form data
-2) post, put of objects (json, xml, content negotiation)
-3) acceptance tests with objects (RestSharp, HTTPClient)
-4) unit tests with objects (Nancy.Testing)
-5) data store for objects (Entity or Dapper)
+1) prep: sending form data
+2) prop: post, put of objects (json, xml, content negotiation)
+3) prep: acceptance tests with objects (RestSharp, HTTPClient)
+4) prep: unit tests with objects (Nancy.Testing)
+5) prep: data store for objects (Entity or Dapper)
 -----------------------------------------------------------------------------------------
 Command
 NullObject

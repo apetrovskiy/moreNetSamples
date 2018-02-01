@@ -1,39 +1,37 @@
 [-----------------------------------------------------------------------------------------
 2018-02-05
 1) xml and json schemata
+
+1) authentication
+2) cookies
+3) specflow
 -----------------------------------------------------------------------------------------
 Interface Segregation Principle (I from SOLID)
 Facade
 Liskov Substitution Principle (O from SOLID)
 Factory
+Open Close Principle (O from SOLID)
+Decorator
 -----------------------------------------------------------------------------------------]
 
 [-----------------------------------------------------------------------------------------
 2018-02-02
-1) authentication
-2) cookies
-3) specflow
-
-1) sending form data
-2) post, put of objects (json, xml, content negotiation)
-3) acceptance tests with objects (RestSharp, HTTPClient)
-4) unit tests with objects (Nancy.Testing)
-5) data store for objects (Entity or Dapper)
+1) an Instagram sample
+2) sending form data
+3) post, put of objects (json, xml, content negotiation)
+4) acceptance tests with objects (RestSharp, HTTPClient)
+5) unit tests with objects (Nancy.Testing)
+6) data store for objects (Entity or Dapper)
 -----------------------------------------------------------------------------------------
-Open Close Principle (O from SOLID)
-Decorator
+Command
+NullObject
 -----------------------------------------------------------------------------------------]
 
 [-----------------------------------------------------------------------------------------
 2018-02-01
 1) prep: sending form data
 2) prop: post, put of objects (json, xml, content negotiation)
-3) prep: acceptance tests with objects (RestSharp, HTTPClient)
-4) prep: unit tests with objects (Nancy.Testing)
-5) prep: data store for objects (Entity or Dapper)
 -----------------------------------------------------------------------------------------
-Command
-NullObject
 -----------------------------------------------------------------------------------------]
 
 [-----------------------------------------------------------------------------------------

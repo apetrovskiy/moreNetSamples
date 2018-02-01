@@ -12,7 +12,8 @@
         {
             Get("/dogs", _ => View["dogs.html", Data.Dogs]);
             Get("/newDog", _ => View["newDog.html"]);
-            Post("/newDog", _ => AddNewDog(this.Bind<Dog>()));
+            // Post("/newDog", _ => AddNewDog(this.Bind<Dog>()));
+			Post("/newDog", _ => AddNewDog(this.Bind<Dog>()));
             // Get("/dogs");
         }
 

@@ -5,8 +5,9 @@
     using Model.Dogs;
     using Nancy;
     using Nancy.ModelBinding;
+    using Nancy.Responses.Negotiation;
 
-    public class DogsV2Module : NancyModule
+	public class DogsV2Module : NancyModule
     {
         public DogsV2Module() : base("/v2")
         {
@@ -17,12 +18,18 @@
             // Get("/dogs");
         }
 
-        private HttpStatusCode AddNewDog(Dog dog)
-        {
-            if (null == dog) return HttpStatusCode.NotAcceptable;
-            if (Data.Dogs.Select(dg => dg.Name.ToUpper()).Contains(dog.Name.ToUpper())) return HttpStatusCode.NotAcceptable;
+		// private HttpStatusCode AddNewDog(Dog dog)
+		private Negotiator AddNewDog(Dog dog)
+		{
+            if (null == dog) return Negotiate.WithStatusCode(HttpStatusCode.NotAcceptable);
+            if (Data.Dogs.Select(dg => dg.Name.ToUpper()).Contains(dog.Name.ToUpper())) return Negotiate.WithStatusCode(HttpStatusCode.NotAcceptable);
             Data.Dogs.Add(dog);
-            return HttpStatusCode.Created;
-        }
+            // return HttpStatusCode.Created;
+			return Negotiate
+				.WithStatusCode(HttpStatusCode.Created)
+				.WithView("dogs.html")
+				.WithModel(Data.Dogs)
+				.WithFullNegotiation();
+		}
     }
 }

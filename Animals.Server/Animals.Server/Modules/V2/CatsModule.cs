@@ -11,6 +11,9 @@
         public CatsModule() : base("/V2")
         {
             Post("/newcat",_ => AddNewCat());
+			
+			// the fix
+			Get("/newcat", _ => View["newCat.html"]);
 
             Get("/cats", _ => {
                 if (string.IsNullOrEmpty(this.Request.Query["name"].Value))

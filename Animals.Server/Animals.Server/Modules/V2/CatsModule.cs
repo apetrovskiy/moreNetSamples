@@ -10,7 +10,7 @@
     {
         public CatsModule() : base("/V2")
         {
-            Post("/cats",_ => AddNewCat());
+            Post("/newcat",_ => AddNewCat());
 
             Get("/cats", _ => {
                 if (string.IsNullOrEmpty(this.Request.Query["name"].Value))
@@ -21,13 +21,17 @@
             Delete("/cats", parameters => DeleteCat(this.Request.Query["name"].Value));
         }
 
-        private HttpStatusCode AddNewCat()
+        private Response AddNewCat()
         {
             var cat = this.Bind<Cat>();
             if (null == cat || string.IsNullOrEmpty(cat.Name)) return HttpStatusCode.NotAcceptable;
             if (Data.Cats.Select(cat1 => cat1.Name.ToUpper()).Contains(cat.Name.ToUpper())) return HttpStatusCode.NotAcceptable;
             Data.Cats.Add(cat);
-            return HttpStatusCode.Created;
+
+            //return HttpStatusCode.Created;
+            return Response.Context.Response
+                .WithStatusCode(HttpStatusCode.Created);
+            //.StatusCode..StatusCode..
         }
 
         private Cat GetCat(string name)

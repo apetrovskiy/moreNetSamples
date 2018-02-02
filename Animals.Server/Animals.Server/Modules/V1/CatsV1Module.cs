@@ -4,20 +4,20 @@
     using Model;
     using Nancy;
 
-    public class CatsModule: NancyModule
+    public class CatsV1Module: NancyModule
     {
-        public CatsModule(): base("/v1")
+        public CatsV1Module(): base("/v1")
         {
-            Get["/cats"] = parameters => {
+            Get("/cats", parameters => {
                // return View["allcats.html", Data.Cats];
                if (string.IsNullOrEmpty(this.Request.Query["name"].Value))
                     return View["allcats.html", Data.Cats]; 
                 return GetCat(this.Request.Query["name"].Value);
-            };
+            });
 
-            Post["/cats"] = parameters => AddNewCat(this.Request.Query["name"].Value);
+            Post("/cats", parameters => AddNewCat(this.Request.Query["name"].Value));
 
-            Delete["/cats"] = parameters => DeleteCat(this.Request.Query["name"].Value);
+            Delete("/cats", parameters => DeleteCat(this.Request.Query["name"].Value));
         }
 
         private Cat GetCat(string name)

@@ -5,6 +5,7 @@
     using Model;
     using Nancy;
     using Nancy.ModelBinding;
+    using Nancy.Responses.Negotiation;
 
     public class CatsModule : NancyModule
     {
@@ -15,6 +16,9 @@
 			// the fix
 			Get("/newcat", _ => View["newCat.html"]);
 
+            // the fix
+            Get("/newcat", _ => View["newCat.html"]);
+
             Get("/cats", _ => {
                 if (string.IsNullOrEmpty(this.Request.Query["name"].Value))
                     return View["allcats.html", Data.Cats];
@@ -24,17 +28,20 @@
             Delete("/cats", parameters => DeleteCat(this.Request.Query["name"].Value));
         }
 
-        private Response AddNewCat()
+        private Negotiator AddNewCat()
         {
             var cat = this.Bind<Cat>();
-            if (null == cat || string.IsNullOrEmpty(cat.Name)) return HttpStatusCode.NotAcceptable;
-            if (Data.Cats.Select(cat1 => cat1.Name.ToUpper()).Contains(cat.Name.ToUpper())) return HttpStatusCode.NotAcceptable;
+            if (null == cat || string.IsNullOrEmpty(cat.Name)) return Negotiate.WithStatusCode(HttpStatusCode.NotAcceptable);
+            if (Data.Cats.Select(cat1 => cat1.Name.ToUpper()).Contains(cat.Name.ToUpper())) return Negotiate.WithStatusCode(HttpStatusCode.NotAcceptable);
             Data.Cats.Add(cat);
 
-            //return HttpStatusCode.Created;
-            return Response.Context.Response
-                .WithStatusCode(HttpStatusCode.Created);
-            //.StatusCode..StatusCode..
+            // the fix
+            // return HttpStatusCode.Created;
+            return Negotiate
+                    .WithFullNegotiation()
+                    .WithModel(Data.Cats)
+                    .WithStatusCode(HttpStatusCode.Created)
+                    .WithView("allcats.html");
         }
 
         private Cat GetCat(string name)

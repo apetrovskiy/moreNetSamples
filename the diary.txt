@@ -16,11 +16,13 @@ Decorator
 
 [-----------------------------------------------------------------------------------------
 2018-02-05
-1) an Instagram sample
-2) put of objects (json, xml, content negotiation)
-3) acceptance tests with objects (RestSharp, HTTPClient)
-4) unit tests with objects (Nancy.Testing)
-5) data store for objects (Entity or Dapper)
+1) unit tests in the SRP sample
+2) managing Chrome driver via Json Wire Protocol
+3) an Instagram sample
+4) put of objects (json, xml, content negotiation)
+5) acceptance tests with objects (RestSharp, HTTPClient)
+6) unit tests with objects (Nancy.Testing)
+7) data store for objects (Entity or Dapper)
 -----------------------------------------------------------------------------------------
 Command
 NullObject

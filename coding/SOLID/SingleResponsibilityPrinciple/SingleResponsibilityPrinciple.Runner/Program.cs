@@ -10,6 +10,10 @@
 	{
 		static void Main(string[] args)
         {
+			// TODO: removal of unused parts of namespaces
+			// TODO: removal of the useless line of code
+			// TODO: introducing seams in readers
+			// TODO: creating tests on string readers
             var reader = new DataLoader();
             var resultCollection = new List<TradeItem>();
             Console.WriteLine(System.Environment.CurrentDirectory);

@@ -1,8 +1,8 @@
-﻿using System;
-
-namespace StravaAccessSample.Runner
+﻿namespace StravaAccessSample.Runner
 {
-    class Program
+	using System;
+
+	class Program
     {
         static void Main(string[] args)
         {

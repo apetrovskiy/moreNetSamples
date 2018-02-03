@@ -1,4 +1,4 @@
-[-----------------------------------------------------------------------------------------
+﻿[-----------------------------------------------------------------------------------------
 2018-02-06
 1) xml and json schemata
 
@@ -17,11 +17,10 @@ Decorator
 [-----------------------------------------------------------------------------------------
 2018-02-05
 1) an Instagram sample
-2) sending form data
-3) post, put of objects (json, xml, content negotiation)
-4) acceptance tests with objects (RestSharp, HTTPClient)
-5) unit tests with objects (Nancy.Testing)
-6) data store for objects (Entity or Dapper)
+2) put of objects (json, xml, content negotiation)
+3) acceptance tests with objects (RestSharp, HTTPClient)
+4) unit tests with objects (Nancy.Testing)
+5) data store for objects (Entity or Dapper)
 -----------------------------------------------------------------------------------------
 Command
 NullObject
@@ -30,13 +29,10 @@ NullObject
 -----------------------------------------------------------------------------------------
 2018-02-02
 1) sending form data
-2) post, put of objects (json, xml, content negotiation)
-3) acceptance tests with objects (RestSharp, HTTPClient)
-4) unit tests with objects (Nancy.Testing)
-5) data store for objects (Entity or Dapper)
+2) post of objects (json, xml, content negotiation)
+3) acceptance tests for V2 (RestSharp)?
+4) unit tests for V2 (Nancy.Testing)
 -----------------------------------------------------------------------------------------
-Command
-NullObject
 -----------------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------------------------

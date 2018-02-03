@@ -1,27 +1,28 @@
-[-----------------------------------------------------------------------------------------
+﻿[-----------------------------------------------------------------------------------------
 to 2018-02-06
 1) getting information from XML schema
 2) getting information from json schema
------------------------------------------------------------------------------------------
-1) refactoring to ISP
-1) refactoring to LSP
------------------------------------------------------------------------------------------]
 
-[-----------------------------------------------------------------------------------------
-to 2018-02-05
 1) acceptance tests with authentication
 2) acceptance test with cookies
 3) tests with SpecFlow
 
+5) usage of a data store
+-----------------------------------------------------------------------------------------
+1) refactoring to ISP
+1) refactoring to LSP
+1) refactoring to OCR
+
+1) more refactoring to split up responsibilities
+-----------------------------------------------------------------------------------------]
+
+[-----------------------------------------------------------------------------------------
+to 2018-02-05
 1) sending form data in acceptance tests
 2) sending form data in unit tests
 3) acceptance tests with objects (json, xml, content negotiation)
 4) unit tests with objects
-5) usage of a data store
 -----------------------------------------------------------------------------------------
-1) refactoring to OCR
-
-1) more refactoring to split up responsibilities
 -----------------------------------------------------------------------------------------]
 
 -----------------------------------------------------------------------------------------

@@ -6,7 +6,7 @@
     {
         static void Main(string[] args)
         {
-	        new SimpleTest().Run();
+	        new SimpleTest().RunPolicyWithRetry();
 
 	        Console.ReadKey();
         }

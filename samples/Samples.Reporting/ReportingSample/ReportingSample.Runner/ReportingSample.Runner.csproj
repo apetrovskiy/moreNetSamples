@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReportingSample.DotLiquid\ReportingSample.DotLiquid.csproj" />
+    <ProjectReference Include="..\ReportingSample.MarkDown\ReportingSample.MarkDown.csproj" />
+    <ProjectReference Include="..\ReportingSample.Nustache\ReportingSample.Nustache.csproj" />
+    <ProjectReference Include="..\ReportingSample.Spark\ReportingSample.Spark.csproj" />
+  </ItemGroup>
+
+</Project>

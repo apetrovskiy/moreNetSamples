@@ -16,6 +16,7 @@
 
         public override IEnumerable<TradeItem> LoadFromFile()
     {
+        // TODO: please use XDocument.Parse
         var xdoc = XDocument.Load(FullFilePath);
         var root = xdoc.Root;
         var result = root.Descendants("item").Select(item => new TradeItem

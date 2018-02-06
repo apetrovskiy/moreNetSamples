@@ -20,21 +20,17 @@
 
         public override IEnumerable<TradeItem> LoadFromFile()
         {
-           return ProcessLines();
+           return ProcessLines(LoadLines());
         }
 
-        List<string> LoadLines()
+        IEnumerable<string> LoadLines()
         {
             return File.ReadAllLines(FullFilePath).ToList();
         }
 
-        private IEnumerable<TradeItem> ProcessLines()
+        internal IEnumerable<TradeItem> ProcessLines(IEnumerable<string> lines)
         {
-            var lines = LoadLines();
-
-            //StreamReader reader;
             var result = new List<TradeItem>();
-            // var line = reader.ReadLine().Split('\t');
             lines.Skip(1).ToList().ForEach(line =>
             {
                 var lineData = line.Split('\t');

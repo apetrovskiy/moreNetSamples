@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibilityPrincip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibilityPrinciple.Runner", "SingleResponsibilityPrinciple.Runner\SingleResponsibilityPrinciple.Runner.csproj", "{DE267BB9-9D3A-49E2-82C7-67AC0A460C1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibilityPrinciple.Tests", "SingleResponsibilityPrinciple.Tests\SingleResponsibilityPrinciple.Tests.csproj", "{5CE5890F-BA42-41B2-BA6A-098B6ADA4B9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibilityPrinciple.Tests", "SingleResponsibilityPrinciple.Tests\SingleResponsibilityPrinciple.Tests.csproj", "{9F711C3C-7BD7-438C-9862-D6E71909CEFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{DE267BB9-9D3A-49E2-82C7-67AC0A460C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE267BB9-9D3A-49E2-82C7-67AC0A460C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE267BB9-9D3A-49E2-82C7-67AC0A460C1D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5CE5890F-BA42-41B2-BA6A-098B6ADA4B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5CE5890F-BA42-41B2-BA6A-098B6ADA4B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5CE5890F-BA42-41B2-BA6A-098B6ADA4B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5CE5890F-BA42-41B2-BA6A-098B6ADA4B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F711C3C-7BD7-438C-9862-D6E71909CEFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F711C3C-7BD7-438C-9862-D6E71909CEFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F711C3C-7BD7-438C-9862-D6E71909CEFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F711C3C-7BD7-438C-9862-D6E71909CEFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

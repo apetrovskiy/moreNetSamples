@@ -2,8 +2,8 @@
 namespace SingleResponsibilityPrinciple.Tests
 {
     using NUnit.Framework;
-    using ObjectModel;
-    using Assert = NUnit.Framework.Assert;
+	using SingleResponsibilityPrinciple.ObjectModel;
+	using Assert = NUnit.Framework.Assert;
 
     public class TsvReaderTests
     {

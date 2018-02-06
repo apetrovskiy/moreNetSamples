@@ -3,9 +3,10 @@
     using System;
     using System.Collections.Generic;
     using System.IO;
+    using System.Linq;
     using Types;
 
-    public class TsvReader: DataFileReader
+    public class TsvReader : DataFileReader
     {
         public TsvReader(string fullFilePath)
         {
@@ -13,27 +14,39 @@
             CheckInputFile(FullFilePath);
         }
 
-        public override IEnumerable<TradeItem> LoadFromFile()
-    {
-        var result = new List<TradeItem>();
-
-        using (var reader = new StreamReader(FullFilePath))
+        internal TsvReader()
         {
-            reader.ReadLine();
-            while (!reader.EndOfStream)
-            {
-                var line = reader.ReadLine().Split('\t');
-                result.Add(new TradeItem
-                {
-                    Id = Convert.ToInt32(line[0]),
-                    Name = line[1],
-                    Price = Convert.ToDecimal(line[2]),
-                    Amount = Convert.ToDecimal(line[3])
-                });
-            }
         }
 
-        return result;
-    }
+        public override IEnumerable<TradeItem> LoadFromFile()
+        {
+           return ProcessLines();
+        }
+
+        List<string> LoadLines()
+        {
+            return File.ReadAllLines(FullFilePath).ToList();
+        }
+
+        private IEnumerable<TradeItem> ProcessLines()
+        {
+            var lines = LoadLines();
+
+            //StreamReader reader;
+            var result = new List<TradeItem>();
+            // var line = reader.ReadLine().Split('\t');
+            lines.Skip(1).ToList().ForEach(line =>
+            {
+                var lineData = line.Split('\t');
+                result.Add(new TradeItem
+                {
+                    Id = Convert.ToInt32(lineData[0]),
+                    Name = lineData[1],
+                    Price = Convert.ToDecimal(lineData[2]),
+                    Amount = Convert.ToDecimal(lineData[3])
+                });
+            });
+            return result;
+        }
     }
 }

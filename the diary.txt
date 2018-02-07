@@ -1,5 +1,5 @@
 [-----------------------------------------------------------------------------------------
-2018-02-08
+2018-02-09
 1) authentication
 2) cookies
 3) specflow
@@ -13,11 +13,24 @@ Factory
 -----------------------------------------------------------------------------------------]
 
 [-----------------------------------------------------------------------------------------
-2018-02-07
+2018-02-08
 1) put of objects (json, xml, content negotiation)
 2) acceptance tests with objects (RestSharp, HTTPClient)
 3) unit tests with objects (Nancy.Testing)
 4) data store for objects (Entity or Dapper)
+-----------------------------------------------------------------------------------------
+Open Close Principle (O from SOLID)
+Decorator
+Command
+NullObject
+-----------------------------------------------------------------------------------------]
+
+[-----------------------------------------------------------------------------------------
+2018-02-07
+1) unit tests with objects (Nancy.Testing) - POST, GET
+
+2) acceptance tests with objects (RestSharp, HTTPClient)
+3) put of objects (json, xml, content negotiation)
 -----------------------------------------------------------------------------------------
 Open Close Principle (O from SOLID)
 Decorator

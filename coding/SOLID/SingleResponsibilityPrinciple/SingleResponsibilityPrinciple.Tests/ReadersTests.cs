@@ -1,16 +1,13 @@
-﻿
-using System.Linq;
-using System.Xml.Linq;
-
-namespace SingleResponsibilityPrinciple.Tests
+﻿namespace SingleResponsibilityPrinciple.Tests
 {
+    using System.Linq;
+    using System.Xml.Linq;
     using NUnit.Framework;
     using ObjectModel;
     using Assert = NUnit.Framework.Assert;
 
     public class ReadersTests
     {
-        //[Fact]
         [Test]
         public void TsvReaderShouldReturnCollection()
         {
@@ -44,12 +41,14 @@ namespace SingleResponsibilityPrinciple.Tests
         [Test]
         public void JsonReaderShouldReturnCollection()
         {
-            var inputData = @"[{
-'id' : 1,
-'name' : 'beer',
-'price' : 69.99,
-'amount' : 558.00
-        }]";
+            var inputData = @"
+[{
+    'id' : 1,
+    'name' : 'beer',
+    'price' : 69.99,
+    'amount' : 558.00
+}]
+";
 
             var sut = new JsonReader();
             var actual = sut.ProcessLines(inputData);

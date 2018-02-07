@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9F711C3C-7BD7-438C-9862-D6E71909CEFB}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SingleResponsibilityPrinciple.Tests</RootNamespace>
-    <AssemblyName>SingleResponsibilityPrinciple.Tests</AssemblyName>
+    <ProjectGuid>{AD19CDF2-8DCE-4AE6-8568-864CB4094E1E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SampleFakesAndMocks.Runner</RootNamespace>
+    <AssemblyName>SampleFakesAndMocks.Runner</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -30,9 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,16 +42,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReadersTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SingleResponsibilityPrinciple\SingleResponsibilityPrinciple.csproj">
-      <Project>{0A6CE99A-352F-4A3B-A00A-4EE70AFDDEBE}</Project>
-      <Name>SingleResponsibilityPrinciple</Name>
+    <ProjectReference Include="..\SampleFakesAndMocks\SampleFakesAndMocks.csproj">
+      <Project>{3C16CE32-6017-480A-B64A-348D229335C0}</Project>
+      <Name>SampleFakesAndMocks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SomeoneElsesComponent\SomeoneElsesComponent.csproj">
+      <Project>{B8D57882-1869-4071-AA13-CD334AAD48E1}</Project>
+      <Name>SomeoneElsesComponent</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

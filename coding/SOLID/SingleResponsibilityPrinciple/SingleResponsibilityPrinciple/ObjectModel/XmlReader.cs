@@ -1,4 +1,6 @@
-﻿namespace SingleResponsibilityPrinciple.ObjectModel
+﻿using System.IO;
+
+namespace SingleResponsibilityPrinciple.ObjectModel
 {
     using System;
     using System.Collections.Generic;
@@ -14,11 +16,25 @@
             CheckInputFile(FullFilePath);
         }
 
+        internal XmlReader()
+        {
+
+        }
+
+        XDocument LoadLines()
+        {
+            return XDocument.Load(FullFilePath); 
+        }
+
         public override IEnumerable<TradeItem> LoadFromFile()
+        {
+            return ProcessLines(LoadLines());
+        }
+
+        public IEnumerable<TradeItem> ProcessLines(XDocument  lines)
     {
         // TODO: please use XDocument.Parse
-        var xdoc = XDocument.Load(FullFilePath);
-        var root = xdoc.Root;
+        var root = lines.Root;
         var result = root.Descendants("item").Select(item => new TradeItem
         {
             Id = Convert.ToInt32(item.Element("id").Value),

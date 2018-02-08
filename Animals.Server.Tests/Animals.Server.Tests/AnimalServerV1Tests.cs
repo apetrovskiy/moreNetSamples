@@ -29,18 +29,18 @@ namespace Animals.Server.Tests
             Assert.AreEqual(HttpStatusCode.Created, this.response.StatusCode);
             this.GivenWeCreateCat();
             Assert.AreEqual(HttpStatusCode.NotAcceptable, this.response.StatusCode);
-        }
-
-        [Test]
-        public void ShouldReturnCatOnGetAfterPost()
-        {
-            this.GivenWeCreateCat();
             Assert.AreEqual(HttpStatusCode.Created, this.response.StatusCode);
             this.ThenWeGetThatCat();
         }
 
         private void ThenWeGetThatCat()
         {
+        }
+
+        [Test]
+        public void ShouldReturnCatOnGetAfterPost()
+        {
+            this.GivenWeCreateCat();
             this.request = new RestRequest(Method.GET);
             this.request.AddParameter("name", "Tiger", ParameterType.QueryString);
             this.response = this.client.Execute(this.request);

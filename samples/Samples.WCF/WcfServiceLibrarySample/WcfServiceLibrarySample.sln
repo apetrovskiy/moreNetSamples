@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceLibrarySample", "WcfServiceLibrarySample\WcfServiceLibrarySample.csproj", "{45382705-AA26-48C0-9539-DAFF191B5151}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWCFClient", "HelloWCFClient\HelloWCFClient.csproj", "{A0C59911-6229-48E5-801A-C7C586357619}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{45382705-AA26-48C0-9539-DAFF191B5151}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45382705-AA26-48C0-9539-DAFF191B5151}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45382705-AA26-48C0-9539-DAFF191B5151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0C59911-6229-48E5-801A-C7C586357619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0C59911-6229-48E5-801A-C7C586357619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0C59911-6229-48E5-801A-C7C586357619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0C59911-6229-48E5-801A-C7C586357619}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

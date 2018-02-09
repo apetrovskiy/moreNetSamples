@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 
 namespace HelloWCFClient
 {
+    using ServiceReference1;
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -27,7 +29,9 @@ namespace HelloWCFClient
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            ServiceReference1.Service1Client proxy = new Service1Client();
+            string msg = proxy.GetData(42);
+            MessageBox.Show(msg);
         }
     }
 }

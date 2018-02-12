@@ -61,10 +61,22 @@
   <ItemGroup>
     <Compile Include="AnimalServerV1Tests.cs" />
     <Compile Include="AnimalsServerV2Tests.cs" />
+    <Compile Include="Deletion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="URLs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>URLs.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="URLs.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>URLs.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

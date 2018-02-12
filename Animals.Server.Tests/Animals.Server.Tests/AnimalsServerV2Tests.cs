@@ -1,5 +1,6 @@
 ﻿namespace Animals.Server.Tests
 {
+    using System;
     using System.Net;
     using Newtonsoft.Json.Linq;
     using NUnit.Framework;
@@ -14,10 +15,17 @@
 
         IRestResponse response;
 
+        private Deletion _deletion;
+
+        public AnimalsServerV2Tests()
+        {
+            this._deletion = new Deletion(URLs.UrlToCatsV2);
+        }
+
         [SetUp]
         public void AnimalServerV2Tests1()
         {
-            this.client = new RestClient("http://localhost:1235/v2/newcat");
+            this.client = new RestClient(URLs.Newcat);
         }
 
 
@@ -31,7 +39,7 @@
 
         private void ThenWeGetThatCat(object cat)
         {
-            const string Expected = "{\"id\":9,\"name\":\"Cat\",\"color\":\"black\",\"owned\":true,\"age\":12}";
+            const string Expected = "{{'id': 9,'name': 'Cat','color': 'black','owned': true,'age': 12}}";
             var tempclient = new RestClient("http://localhost:1235/v2/cats");
             this.request = new RestRequest(Method.GET);
             this.request.AddParameter("name", "Cat", ParameterType.QueryString);
@@ -43,6 +51,8 @@
             var json = JObject.Parse(jsonString);
            // "{\"id\":9,\"name\":\"Cat\",\"color\":\"black\",\"owned\":true,\"age\":12}"
 
+            var actual = json.ToString().Replace("\"", "'");
+            actual = actual.Replace(" ", String.Empty);
 
             Assert.AreEqual(Expected, json);
         }
@@ -93,6 +103,13 @@
 
             this.response = this.client.Execute(this.request);
 
+        }
+
+        [TearDown]
+
+        public void DeleteTestCat()
+        {
+            _deletion.DeleteCatByName("Cat");
         }
     }
 }

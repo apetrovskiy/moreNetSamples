@@ -14,11 +14,17 @@ namespace Animals.Server.Tests
         RestRequest request;
 
         IRestResponse response;
+        private readonly Deletion _deletion;
+
+        public AnimalServerV1Tests()
+        {
+            _deletion = new Deletion(URLs.UrlToCatsV1);
+        }
 
         [SetUp]
         public void AnimalServerV1Tests1()
         {
-            this.client = new RestClient("http://localhost:1235/v1/cats");
+            this.client = new RestClient(URLs.UrlToCatsV1);
         }
 
 
@@ -29,12 +35,16 @@ namespace Animals.Server.Tests
             Assert.AreEqual(HttpStatusCode.Created, this.response.StatusCode);
             this.GivenWeCreateCat();
             Assert.AreEqual(HttpStatusCode.NotAcceptable, this.response.StatusCode);
-            Assert.AreEqual(HttpStatusCode.Created, this.response.StatusCode);
             this.ThenWeGetThatCat();
+            Assert.AreEqual(HttpStatusCode.OK, this.response.StatusCode);
         }
+
 
         private void ThenWeGetThatCat()
         {
+            this.request = new RestRequest(Method.GET);
+            this.request.AddParameter("name", "Tiger", ParameterType.QueryString);
+            this.response = this.client.Execute(this.request);
         }
 
         [Test]
@@ -58,11 +68,7 @@ namespace Animals.Server.Tests
 
         public void DeleteTestCat()
         {
-            this.request = new RestRequest(Method.DELETE);
-            this.request.AddParameter("name", "Tiger", ParameterType.QueryString);
-            this.response = this.client.Execute(this.request);
-            Assert.AreEqual(HttpStatusCode.OK, this.response.StatusCode);
-
+            _deletion.DeleteCatByName("Tiger");
         }
     }
 }

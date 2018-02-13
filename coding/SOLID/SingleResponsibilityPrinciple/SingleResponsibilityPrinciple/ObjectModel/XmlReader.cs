@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-namespace SingleResponsibilityPrinciple.ObjectModel
+﻿namespace SingleResponsibilityPrinciple.ObjectModel
 {
     using System;
     using System.Collections.Generic;
@@ -10,18 +8,7 @@ namespace SingleResponsibilityPrinciple.ObjectModel
 
     public class XmlReader: DataFileReader
     {
-        public XmlReader(string fullFilePath)
-        {
-            FullFilePath = fullFilePath;
-            CheckInputFile(FullFilePath);
-        }
-
-        internal XmlReader()
-        {
-
-        }
-
-        XDocument LoadLines()
+       XDocument LoadLines()
         {
             return XDocument.Load(FullFilePath); 
         }
@@ -45,5 +32,9 @@ namespace SingleResponsibilityPrinciple.ObjectModel
 
         return result;
     }
+
+        public XmlReader(string fullFilePath, bool isRealFile = true) : base(fullFilePath, isRealFile)
+        {
+        }
     }
 }

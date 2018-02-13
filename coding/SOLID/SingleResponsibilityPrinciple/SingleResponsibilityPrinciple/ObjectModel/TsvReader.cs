@@ -8,16 +8,7 @@
 
     public class TsvReader : DataFileReader
     {
-        public TsvReader(string fullFilePath)
-        {
-            FullFilePath = fullFilePath;
-            CheckInputFile(FullFilePath);
-        }
-
-        internal TsvReader()
-        {
-        }
-
+      
         public override IEnumerable<TradeItem> LoadFromFile()
         {
            return ProcessLines(LoadLines());
@@ -43,6 +34,10 @@
                 });
             });
             return result;
+        }
+
+        public TsvReader(string fullFilePath, bool isRealFile = true) : base(fullFilePath, isRealFile)
+        {
         }
     }
 }

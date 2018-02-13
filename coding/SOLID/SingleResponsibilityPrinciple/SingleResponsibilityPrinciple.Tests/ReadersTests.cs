@@ -1,10 +1,12 @@
 ﻿namespace SingleResponsibilityPrinciple.Tests
 {
+    using System.Collections.Generic;
     using System.Linq;
     using System.Xml.Linq;
     using NUnit.Framework;
     using ObjectModel;
-    using Assert = NUnit.Framework.Assert;
+    using Types;
+  //  using Assert = NUnit.Framework.Assert;
 
     public class ReadersTests
     {
@@ -14,7 +16,7 @@
             var inputData = @"Id	Name	Price	Amount
 2	milk	39.99	600.00";
 
-            var sut = new TsvReader();
+            var sut = new TsvReader("", false);
             var actual = sut.ProcessLines(inputData.Split('\r'));
             
             Assert.AreEqual(2, actual.First().Id);
@@ -29,7 +31,7 @@
             var inputData = @"Id,Name,Price,Amount
 1,beef,300.00,1200.00";
 
-            var sut = new CsvReader();
+            var sut = new CsvReader("", false);
             var actual = sut.ProcessLines(inputData.Split('\r'));
 
             Assert.AreEqual(1, actual.First().Id);
@@ -50,7 +52,7 @@
 }]
 ";
 
-            var sut = new JsonReader();
+            var sut = new JsonReader("", false);
             var actual = sut.ProcessLines(inputData);
 
             Assert.AreEqual(1, actual.First().Id);
@@ -71,13 +73,25 @@
   </item>
 </items>";
 
-            var sut = new XmlReader();
+            var sut = new XmlReader("", false);
             var actual = sut.ProcessLines(XDocument.Parse(inputData));
 
             Assert.AreEqual(1, actual.First().Id);
             Assert.AreEqual(3000.00, actual.First().Amount);
             Assert.AreEqual("coffee", actual.First().Name);
             Assert.AreEqual(149.99, actual.First().Price);
+        }
+
+        [Test]
+
+        public void DataLoaderTest()
+        {
+            var sut = new DataLoader();
+            var fakeReader = new FakeReader("", false);
+            fakeReader.TradeItems = new List<TradeItem>(new[] { new TradeItem { Id = 9, Price = 100, Name = "fake", Amount = 3 } });
+            var actual = sut.LoadTrades(fakeReader);
+
+            Assert.AreEqual(fakeReader.TradeItems, actual);
         }
     }
 }

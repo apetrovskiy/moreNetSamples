@@ -5,11 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Atlassian.SDK" Version="10.0.2" />
-    <PackageReference Include="Dapplo.Jira" Version="0.7.4" />
     <PackageReference Include="Jira.SDK" Version="1.2.1" />
     <PackageReference Include="RestSharp" Version="106.2.1" />
-    <PackageReference Include="TechTalk.JiraRestClient" Version="2.5.0" />
   </ItemGroup>
 
 </Project>

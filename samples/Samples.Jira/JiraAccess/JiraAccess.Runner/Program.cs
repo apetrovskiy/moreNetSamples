@@ -14,6 +14,7 @@
             var project = projectReader.GetProject("PROJ");
 
             Console.WriteLine(project.Name);
+            Console.WriteLine(project.Lead.Name);
             Console.ReadKey();
         }
     }

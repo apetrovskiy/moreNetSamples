@@ -4,15 +4,27 @@
     using System.IO;
     using Types;
 
-    public abstract class DataFileReader
+    public class DataFileReader
     {
-       protected void CheckInputFile(string filePath)
+        public bool IsRealFile { get; set; }
+        public DataFileReader(string fullFilePath, bool isRealFile = true)
         {
+            IsRealFile = isRealFile;
+            FullFilePath = fullFilePath;
+            CheckInputFile(FullFilePath);
+        }
+        protected void CheckInputFile(string filePath)
+        {
+            if (!IsRealFile) return;
             if (!File.Exists(filePath))
                 throw new FileNotFoundException("Cannot find file " + filePath);
         }
 
         public string FullFilePath { get; set; }
-        public abstract IEnumerable<TradeItem> LoadFromFile();
+
+        public virtual IEnumerable<TradeItem> LoadFromFile()
+        {
+            return new List<TradeItem>();
+        }
     }
 }

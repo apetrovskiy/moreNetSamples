@@ -9,16 +9,8 @@ namespace SingleResponsibilityPrinciple.ObjectModel
 
     public class CsvReader : DataFileReader
     {
-        public CsvReader(string fullFilePath)
-        {
-            FullFilePath = fullFilePath;
-            CheckInputFile(FullFilePath);
-        }
-
-        internal CsvReader()
-        {
-
-        }
+     
+      
 
         IEnumerable<string> LoadLines()
         {
@@ -49,6 +41,10 @@ namespace SingleResponsibilityPrinciple.ObjectModel
             });
 
             return result;
+        }
+
+        public CsvReader(string fullFilePath, bool isRealFile = true) : base(fullFilePath, isRealFile)
+        {
         }
     }
 }

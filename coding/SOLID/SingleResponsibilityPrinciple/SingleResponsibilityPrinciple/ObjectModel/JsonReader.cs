@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace SingleResponsibilityPrinciple.ObjectModel
+﻿namespace SingleResponsibilityPrinciple.ObjectModel
 {
     using System.Collections.Generic;
     using System.IO;
@@ -9,18 +7,7 @@ namespace SingleResponsibilityPrinciple.ObjectModel
 
     public class JsonReader: DataFileReader
     {
-        public JsonReader(string fullFilePath)
-        {
-            FullFilePath = fullFilePath;
-            CheckInputFile(FullFilePath);
-        }
-
-        internal JsonReader()
-        {
-
-        }
-
-        public override IEnumerable<TradeItem> LoadFromFile()
+       public override IEnumerable<TradeItem> LoadFromFile()
         {
             return ProcessLines(LoadLines());
         }
@@ -36,6 +23,10 @@ namespace SingleResponsibilityPrinciple.ObjectModel
             var result = JsonConvert.DeserializeObject<IEnumerable<TradeItem>>(lines);
 
             return result;
+        }
+
+        public JsonReader(string fullFilePath, bool isRealFile = true) : base(fullFilePath, isRealFile)
+        {
         }
     }
 }

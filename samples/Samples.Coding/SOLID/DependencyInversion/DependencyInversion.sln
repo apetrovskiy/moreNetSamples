@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInversion", "DependencyInversion\DependencyInversion.csproj", "{7921929B-6274-43E7-8C6D-A1A325CAD512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInversion.Runner", "DependencyInversion.Runner\DependencyInversion.Runner.csproj", "{AD73D97C-72F7-49C9-956B-CB9C9A7FA899}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7921929B-6274-43E7-8C6D-A1A325CAD512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7921929B-6274-43E7-8C6D-A1A325CAD512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7921929B-6274-43E7-8C6D-A1A325CAD512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7921929B-6274-43E7-8C6D-A1A325CAD512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD73D97C-72F7-49C9-956B-CB9C9A7FA899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD73D97C-72F7-49C9-956B-CB9C9A7FA899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD73D97C-72F7-49C9-956B-CB9C9A7FA899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD73D97C-72F7-49C9-956B-CB9C9A7FA899}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {197C2E57-3526-4AE0-84A3-4B027A5499CA}
+	EndGlobalSection
+EndGlobal

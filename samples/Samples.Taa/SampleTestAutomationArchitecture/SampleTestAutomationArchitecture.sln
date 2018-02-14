@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleTestAutomationArchitecture", "SampleTestAutomationArchitecture\SampleTestAutomationArchitecture.csproj", "{4FD1ADBE-DFF7-471F-8C64-8F2059BEBD3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestGenerationLayer", "TestGenerationLayer", "{BD965605-F6F8-45A0-B866-C1BAF26BEC0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestDefinitionLayer", "TestDefinitionLayer", "{10756242-43F5-4261-A37C-C1C667EF58D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestExecutionLayer", "TestExecutionLayer", "{D931571B-2439-4AE7-8632-98C691B9E575}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestAdaptationLayer", "TestAdaptationLayer", "{5187820A-D029-4EF9-BE3D-C5EFE0D85767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAccess", "TestAdaptationLayer\WebAccess\WebAccess.csproj", "{2DE572CE-262D-4BC1-9924-B72FFBE2D25F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuiAccess", "TestAdaptationLayer\GuiAccess\GuiAccess.csproj", "{C3656B24-DE77-4835-BBB0-7D19F00B9883}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiAccess", "TestAdaptationLayer\RestApiAccess\RestApiAccess.csproj", "{FF693333-9DAA-4510-BCEE-0B392434BBD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRunnerLibrary", "TestExecutionLayer\TestRunnerLibrary\TestRunnerLibrary.csproj", "{FE26CF12-20D9-4500-985D-88E5589E2989}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestStructureLibrary", "TestDefinitionLayer\TestStructureLibrary\TestStructureLibrary.csproj", "{162074D6-6D61-4A72-B02C-C5A7F6D05E85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerationLibrary", "TestGenerationLayer\GenerationLibrary\GenerationLibrary.csproj", "{5B6D1CAC-5894-4B7A-8D35-CE996DC355F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlServerAccess", "TestAdaptationLayer\SqlServerAccess\SqlServerAccess.csproj", "{B8578CCD-0506-4DFF-A334-F443A663105B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FD1ADBE-DFF7-471F-8C64-8F2059BEBD3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD1ADBE-DFF7-471F-8C64-8F2059BEBD3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD1ADBE-DFF7-471F-8C64-8F2059BEBD3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD1ADBE-DFF7-471F-8C64-8F2059BEBD3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DE572CE-262D-4BC1-9924-B72FFBE2D25F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DE572CE-262D-4BC1-9924-B72FFBE2D25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DE572CE-262D-4BC1-9924-B72FFBE2D25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DE572CE-262D-4BC1-9924-B72FFBE2D25F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3656B24-DE77-4835-BBB0-7D19F00B9883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3656B24-DE77-4835-BBB0-7D19F00B9883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3656B24-DE77-4835-BBB0-7D19F00B9883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3656B24-DE77-4835-BBB0-7D19F00B9883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF693333-9DAA-4510-BCEE-0B392434BBD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF693333-9DAA-4510-BCEE-0B392434BBD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF693333-9DAA-4510-BCEE-0B392434BBD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF693333-9DAA-4510-BCEE-0B392434BBD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE26CF12-20D9-4500-985D-88E5589E2989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE26CF12-20D9-4500-985D-88E5589E2989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE26CF12-20D9-4500-985D-88E5589E2989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE26CF12-20D9-4500-985D-88E5589E2989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{162074D6-6D61-4A72-B02C-C5A7F6D05E85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{162074D6-6D61-4A72-B02C-C5A7F6D05E85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{162074D6-6D61-4A72-B02C-C5A7F6D05E85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{162074D6-6D61-4A72-B02C-C5A7F6D05E85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6D1CAC-5894-4B7A-8D35-CE996DC355F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6D1CAC-5894-4B7A-8D35-CE996DC355F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6D1CAC-5894-4B7A-8D35-CE996DC355F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6D1CAC-5894-4B7A-8D35-CE996DC355F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8578CCD-0506-4DFF-A334-F443A663105B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8578CCD-0506-4DFF-A334-F443A663105B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8578CCD-0506-4DFF-A334-F443A663105B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8578CCD-0506-4DFF-A334-F443A663105B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2DE572CE-262D-4BC1-9924-B72FFBE2D25F} = {5187820A-D029-4EF9-BE3D-C5EFE0D85767}
+		{C3656B24-DE77-4835-BBB0-7D19F00B9883} = {5187820A-D029-4EF9-BE3D-C5EFE0D85767}
+		{FF693333-9DAA-4510-BCEE-0B392434BBD2} = {5187820A-D029-4EF9-BE3D-C5EFE0D85767}
+		{FE26CF12-20D9-4500-985D-88E5589E2989} = {D931571B-2439-4AE7-8632-98C691B9E575}
+		{162074D6-6D61-4A72-B02C-C5A7F6D05E85} = {10756242-43F5-4261-A37C-C1C667EF58D3}
+		{5B6D1CAC-5894-4B7A-8D35-CE996DC355F4} = {BD965605-F6F8-45A0-B866-C1BAF26BEC0A}
+		{B8578CCD-0506-4DFF-A334-F443A663105B} = {5187820A-D029-4EF9-BE3D-C5EFE0D85767}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04B535A0-92E7-4F98-8BBF-AA048877C0D6}
+	EndGlobalSection
+EndGlobal

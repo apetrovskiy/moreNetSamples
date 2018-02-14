@@ -47,6 +47,7 @@
     <Compile Include="ObjectModel\DataLoader.cs" />
     <Compile Include="ObjectModel\DataFileReader.cs" />
     <Compile Include="ObjectModel\JsonReader.cs" />
+    <Compile Include="ObjectModel\ReaderFactory.cs" />
     <Compile Include="ObjectModel\TsvReader.cs" />
     <Compile Include="ObjectModel\XmlReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

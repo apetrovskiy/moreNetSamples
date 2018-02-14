@@ -3,10 +3,10 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Xml.Linq;
+    using NSubstitute;
     using NUnit.Framework;
     using ObjectModel;
     using Types;
-  //  using Assert = NUnit.Framework.Assert;
 
     public class ReadersTests
     {
@@ -84,7 +84,7 @@
 
         [Test]
 
-        public void DataLoaderTest()
+        public void DataLoaderSimpleTest()
         {
             var sut = new DataLoader();
             var fakeReader = new FakeReader("", false);
@@ -93,5 +93,21 @@
 
             Assert.AreEqual(fakeReader.TradeItems, actual);
         }
+
+        [Test]
+
+        public void DataLoaderTestWithMock()
+        {
+            var sut = new DataLoader();
+            var mockReader = Substitute.For<DataFileReader>("", false);
+            var expected = new List<TradeItem>(new[] { new TradeItem { Id = 9, Price = 100, Name = "mock", Amount = 3 } });
+            mockReader.LoadFromFile().Returns(expected);
+
+            var actual = sut.LoadTrades(mockReader);
+
+            Assert.AreEqual(expected, actual);
+
+        }
+
     }
 }

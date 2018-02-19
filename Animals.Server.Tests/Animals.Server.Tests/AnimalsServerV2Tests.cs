@@ -39,7 +39,13 @@
 
         private void ThenWeGetThatCat(object cat)
         {
-            const string Expected = "{{'id': 9,'name': 'Cat','color': 'black','owned': true,'age': 12}}";
+            const string Expected = @"{
+  'id': 9,
+  'name': 'Cat',
+  'color': 'black',
+  'owned': true,
+  'age': 12
+}";
             var tempclient = new RestClient("http://localhost:1235/v2/cats");
             this.request = new RestRequest(Method.GET);
             this.request.AddParameter("name", "Cat", ParameterType.QueryString);
@@ -54,7 +60,8 @@
             var actual = json.ToString().Replace("\"", "'");
             actual = actual.Replace(" ", String.Empty);
 
-            Assert.AreEqual(Expected, json);
+            var expected = JObject.Parse(Expected);
+            Assert.AreEqual(expected, json);
         }
 
         [Test]

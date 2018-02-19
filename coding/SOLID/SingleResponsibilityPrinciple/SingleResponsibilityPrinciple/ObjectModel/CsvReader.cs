@@ -10,8 +10,6 @@ namespace SingleResponsibilityPrinciple.ObjectModel
     public class CsvReader : DataFileReader
     {
      
-      
-
         IEnumerable<string> LoadLines()
         {
             return File.ReadAllLines(FullFilePath).ToList();

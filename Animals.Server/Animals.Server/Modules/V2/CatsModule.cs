@@ -6,6 +6,7 @@
     using Nancy;
     using Nancy.ModelBinding;
     using Nancy.Responses.Negotiation;
+    using Serilog;
 
     public class CatsModule : NancyModule
     {
@@ -27,9 +28,21 @@
 
         private Negotiator AddNewCat()
         {
+            var log = new LoggerConfiguration()
+                .WriteTo.Console()
+                .CreateLogger();
+            var log2 = new LoggerConfiguration()
+                .WriteTo.File(@".\log.log")
+                .CreateLogger();
+
+            log.Information("Start");
+            log2.Information("Start");
+
             var cat = this.Bind<Cat>();
             if (null == cat || string.IsNullOrEmpty(cat.Name)) return Negotiate.WithStatusCode(HttpStatusCode.NotAcceptable);
             if (Data.Cats.Select(cat1 => cat1.Name.ToUpper()).Contains(cat.Name.ToUpper())) return Negotiate.WithStatusCode(HttpStatusCode.NotAcceptable);
+            log.Information("Cat: {@cat}", cat);
+            log2.Information("Cat: {@cat}", cat);
             Data.Cats.Add(cat);
 
             // the fix

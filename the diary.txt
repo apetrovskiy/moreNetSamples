@@ -1,5 +1,5 @@
 [-----------------------------------------------------------------------------------------
-2018-02-09
+2018-02-21
 1) authentication
 2) cookies
 3) specflow
@@ -13,7 +13,7 @@ Factory
 -----------------------------------------------------------------------------------------]
 
 [-----------------------------------------------------------------------------------------
-2018-02-08
+2018-02-20
 1) put of objects (json, xml, content negotiation)
 2) acceptance tests with objects (RestSharp, HTTPClient)
 3) unit tests with objects (Nancy.Testing)
@@ -24,6 +24,22 @@ Decorator
 Command
 NullObject
 -----------------------------------------------------------------------------------------]
+
+[-----------------------------------------------------------------------------------------
+2018-02-19
+1) put of objects (json, xml, content negotiation)
+2) acceptance tests with objects (RestSharp, HTTPClient)
+3) unit tests with objects (Nancy.Testing)
+4) overview of framework
+5) logging (NLog, Serilog)
+-----------------------------------------------------------------------------------------
+Open Close Principle (O from SOLID)
+Decorator
+Command
+NullObject
+-----------------------------------------------------------------------------------------]
+
+2018-02-08, 2018-02-09, 2018-02-12 - 2018-02-14 - refactoring, SOLID principles and patterns
 
 [-----------------------------------------------------------------------------------------
 2018-02-07

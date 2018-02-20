@@ -16,4 +16,8 @@
     <PackageReference Include="SpecFlow.NUnit" Version="2.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestDefinitionLayer\TestStructureLibrary\TestStructureLibrary.csproj" />
+  </ItemGroup>
+
 </Project>

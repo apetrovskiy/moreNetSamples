@@ -4,4 +4,10 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestDefinitionLayer\TestInterfaces\TestInterfaces.csproj" />
+    <ProjectReference Include="..\ApiRoutesCollectorLibrary\ApiRoutesCollectorLibrary.csproj" />
+    <ProjectReference Include="..\WebScrapingLibrary\WebScrapingLibrary.csproj" />
+  </ItemGroup>
+
 </Project>

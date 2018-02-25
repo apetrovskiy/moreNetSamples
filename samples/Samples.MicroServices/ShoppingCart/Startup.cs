@@ -1,15 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
 namespace ShoppingCart
 {
+    using Microsoft.AspNetCore.Builder;
+    using Nancy.Owin;
+    using Microsoft.Extensions.DependencyInjection;
+
     public class Startup
     {
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -19,8 +13,9 @@ namespace ShoppingCart
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app) // , IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            /*
             loggerFactory.AddConsole();
 
             if (env.IsDevelopment())
@@ -32,6 +27,9 @@ namespace ShoppingCart
             {
                 await context.Response.WriteAsync("Hello World!");
             });
+            */
+
+            app.UseOwin(buildFunc => buildFunc.UseNancy());
         }
     }
 }

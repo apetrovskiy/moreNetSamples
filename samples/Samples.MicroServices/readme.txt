@@ -1,0 +1,1 @@
+fix global.json to set .NET SDK version

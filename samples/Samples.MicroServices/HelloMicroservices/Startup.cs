@@ -32,8 +32,18 @@ namespace HelloMicroservices
             }
             */
 
+            // these two work
             // app.UseOwin(f => f.UseNancy());
-            app.UseOwin().UseNancy();
+            // app.UseOwin().UseNancy();
+            app.UseOwin(buildFunc =>
+            {
+                buildFunc(next => env =>
+                {
+                    Console.WriteLine("Got request");
+                    return next(env);
+                });
+                buildFunc.UseNancy();
+            });
 
             /*
             app.Run(async (context) =>

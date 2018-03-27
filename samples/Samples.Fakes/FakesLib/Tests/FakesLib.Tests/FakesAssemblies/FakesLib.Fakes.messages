@@ -1,0 +1,2 @@
+D:\Projects\experimental\samples\Samples.Fakes\FakesLib\Tests\FakesLib.Tests\Fakes\FakesLib.fakes : warning : Cannot generate stub for FakesLib.SealedClass: type is sealed.
+D:\Projects\experimental\samples\Samples.Fakes\FakesLib\Tests\FakesLib.Tests\Fakes\FakesLib.fakes : warning : Cannot generate stub for FakesLib.StaticClass: type is sealed.

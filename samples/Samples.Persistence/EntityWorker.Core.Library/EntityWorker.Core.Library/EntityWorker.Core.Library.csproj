@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityWorker.Core" Version="1.5.4" />
+    <PackageReference Include="EntityWorker.SQLite" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>

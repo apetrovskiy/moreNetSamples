@@ -1,0 +1,118 @@
+[-----------------------------------------------------------------------------------------
+2018-02-21
+1) authentication
+2) cookies
+3) specflow
+4) xml and json schemata
+5) an Instagram sample
+-----------------------------------------------------------------------------------------
+Interface Segregation Principle (I from SOLID)
+Facade
+Liskov Substitution Principle (O from SOLID)
+Factory
+-----------------------------------------------------------------------------------------]
+
+[-----------------------------------------------------------------------------------------
+2018-02-20
+1) put of objects (json, xml, content negotiation)
+2) acceptance tests with objects (RestSharp, HTTPClient)
+3) unit tests with objects (Nancy.Testing)
+4) data store for objects (Entity or Dapper)
+-----------------------------------------------------------------------------------------
+Open Close Principle (O from SOLID)
+Decorator
+Command
+NullObject
+-----------------------------------------------------------------------------------------]
+
+[-----------------------------------------------------------------------------------------
+2018-02-19
+1) put of objects (json, xml, content negotiation)
+2) acceptance tests with objects (RestSharp, HTTPClient)
+3) unit tests with objects (Nancy.Testing)
+4) overview of framework
+5) logging (NLog, Serilog)
+-----------------------------------------------------------------------------------------
+Open Close Principle (O from SOLID)
+Decorator
+Command
+NullObject
+-----------------------------------------------------------------------------------------]
+
+2018-02-08, 2018-02-09, 2018-02-12 - 2018-02-14 - refactoring, SOLID principles and patterns
+
+[-----------------------------------------------------------------------------------------
+2018-02-07
+1) unit tests with objects (Nancy.Testing) - POST, GET
+
+2) acceptance tests with objects (RestSharp, HTTPClient)
+3) put of objects (json, xml, content negotiation)
+-----------------------------------------------------------------------------------------
+Open Close Principle (O from SOLID)
+Decorator
+Command
+NullObject
+-----------------------------------------------------------------------------------------]
+ 
+[-----------------------------------------------------------------------------------------
+2018-02-06
+1) unit tests in the SRP sample (finished)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------]
+
+[-----------------------------------------------------------------------------------------
+2018-02-05
+1) unit tests in the SRP sample
+2) managing Chrome driver via Json Wire Protocol
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------]
+
+-----------------------------------------------------------------------------------------
+2018-02-02
+1) sending form data
+2) post of objects (json, xml, content negotiation)
+3) acceptance tests for V2 (RestSharp)?
+4) unit tests for V2 (Nancy.Testing)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+2018-02-01
+1) prep: sending form data
+2) prop: post, put of objects (json, xml, content negotiation)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+2018-01-31
+1) homework: tests with other frameworks - тесты на post, delete в SoapUI
+-----------------------------------------------------------------------------------------
+1) homework: refactoring to split up responsibilities
+(передача пути файла в конструктор)
+-----------------------------------------------------------------------------------------
+
+2018-01-30
+1) homework: не позволять добавлять одноимённого кота
+2) homework: написать acceptance test на добавление одноимённого кота
+3) homework: написать unit test на добавление одноимённого кота
+4) other frameworks for accessing web services, including SoapUI
+-----------------------------------------------------------------------------------------
+Single Responsibility Principle (S from SOLID)
+-----------------------------------------------------------------------------------------
+
+2018-01-29
+acceptance tests with RestSharp (post/get) step-by-step
+unit tests with Nancy.Testing (post/get) step-by-step
+
+2018-01-26
+the Delete and Get methods with parameters on the web service side
+demo of acceptance tests via RestSharp (1 test on post/get)
+
+2018-01-25
+a simple web service with Get and Post method handlers (NancyFx 1.4.4)
+
+2018-01-24
+Restlet client
+
+2018-01-22
+intro, setting goals

@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FakesLib.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:FakesLib.Fakes.ShimClass1">
+            <summary>Shim type of FakesLib.Class1</summary>
+        </member>
+        <member name="M:FakesLib.Fakes.ShimClass1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FakesLib.Fakes.ShimClass1.#ctor(FakesLib.Class1)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FakesLib.Fakes.ShimClass1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimClass1.AllInstances.GetNumbersInt32">
+            <summary>Sets the shim of Class1.GetNumbers(Int32 count)</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimClass1.AllInstances.IntDataGet">
+            <summary>Sets the shim of Class1.get_IntData()</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimClass1.AllInstances.IntDataSetInt32">
+            <summary>Sets the shim of Class1.set_IntData(Int32 value)</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimClass1.AllInstances.StringDataGet">
+            <summary>Sets the shim of Class1.get_StringData()</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimClass1.AllInstances.StringDataSetString">
+            <summary>Sets the shim of Class1.set_StringData(String value)</summary>
+        </member>
+        <member name="M:FakesLib.Fakes.ShimClass1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FakesLib.Fakes.ShimClass1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimClass1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimClass1.Constructor">
+            <summary>Sets the shim of Class1.Class1()</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimClass1.GetNumbersInt32">
+            <summary>Sets the shim of Class1.GetNumbers(Int32 count)</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimClass1.IntDataGet">
+            <summary>Sets the shim of Class1.get_IntData()</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimClass1.IntDataSetInt32">
+            <summary>Sets the shim of Class1.set_IntData(Int32 value)</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimClass1.StringDataGet">
+            <summary>Sets the shim of Class1.get_StringData()</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimClass1.StringDataSetString">
+            <summary>Sets the shim of Class1.set_StringData(String value)</summary>
+        </member>
+        <member name="T:FakesLib.Fakes.ShimSealedClass">
+            <summary>Shim type of FakesLib.SealedClass</summary>
+        </member>
+        <member name="M:FakesLib.Fakes.ShimSealedClass.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FakesLib.Fakes.ShimSealedClass.#ctor(FakesLib.SealedClass)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FakesLib.Fakes.ShimSealedClass.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimSealedClass.AllInstances.GetNumbersInt32">
+            <summary>Sets the shim of SealedClass.GetNumbers(Int32 count)</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimSealedClass.AllInstances.StringDataGet">
+            <summary>Sets the shim of SealedClass.get_StringData()</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimSealedClass.AllInstances.StringDataSetString">
+            <summary>Sets the shim of SealedClass.set_StringData(String value)</summary>
+        </member>
+        <member name="M:FakesLib.Fakes.ShimSealedClass.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FakesLib.Fakes.ShimSealedClass.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimSealedClass.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimSealedClass.Constructor">
+            <summary>Sets the shim of SealedClass.SealedClass()</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimSealedClass.GetNumbersInt32">
+            <summary>Sets the shim of SealedClass.GetNumbers(Int32 count)</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimSealedClass.IntDataGet">
+            <summary>Sets the shim of SealedClass.get_IntData()</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimSealedClass.IntDataSetInt32">
+            <summary>Sets the shim of SealedClass.set_IntData(Int32 value)</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimSealedClass.StringDataGet">
+            <summary>Sets the shim of SealedClass.get_StringData()</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimSealedClass.StringDataSetString">
+            <summary>Sets the shim of SealedClass.set_StringData(String value)</summary>
+        </member>
+        <member name="T:FakesLib.Fakes.ShimStaticClass">
+            <summary>Shim type of FakesLib.StaticClass</summary>
+        </member>
+        <member name="M:FakesLib.Fakes.ShimStaticClass.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FakesLib.Fakes.ShimStaticClass.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FakesLib.Fakes.ShimStaticClass.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimStaticClass.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimStaticClass.GetNumbersInt32">
+            <summary>Sets the shim of StaticClass.GetNumbers(Int32 count)</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimStaticClass.IntDataGet">
+            <summary>Sets the shim of StaticClass.get_IntData()</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimStaticClass.IntDataSetInt32">
+            <summary>Sets the shim of StaticClass.set_IntData(Int32 value)</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimStaticClass.StringDataGet">
+            <summary>Sets the shim of StaticClass.get_StringData()</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.ShimStaticClass.StringDataSetString">
+            <summary>Sets the shim of StaticClass.set_StringData(String value)</summary>
+        </member>
+        <member name="T:FakesLib.Fakes.StubClass1">
+            <summary>Stub type of FakesLib.Class1</summary>
+        </member>
+        <member name="M:FakesLib.Fakes.StubClass1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.StubClass1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:FakesLib.Fakes.StubClass1.InitializeStub">
+            <summary>Initializes a new instance of type StubClass1</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.StubClass1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FakesLib.Fakes.StubClass1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

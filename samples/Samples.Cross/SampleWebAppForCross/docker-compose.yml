@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  samplewebappforcross:
+    image: samplewebappforcross
+    build:
+      context: .
+      dockerfile: SampleWebAppForCross\Dockerfile

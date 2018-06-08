@@ -6,7 +6,7 @@
 
     public class FirstRepository : Transaction
     {
-        public FirstRepository(string connectionString, DataBaseTypes dataBaseTypes)
+        public FirstRepository(string connectionString, DataBaseTypes dataBaseTypes = DataBaseTypes.Mssql)
             : base(connectionString, dataBaseTypes)
         {
         }
